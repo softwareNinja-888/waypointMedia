@@ -76,7 +76,7 @@ export function Hero() {
                         className="text-4xl font-Cal_Sans text-center"
                         variants={itemVariants}
                     >
-                        Enter the new age of brand innovation
+                        Enter the new age of digital innovation
                     </motion.div>
 
                     <motion.div 
@@ -91,8 +91,8 @@ export function Hero() {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.98 }}
                     >
-                        <NavLink to='/products' className="mx-auto block w-fit bg-white/30 backdrop-blur-lg rounded-4xl px-6 py-2 transition-all hover:bg-mainGreen duration-1000 ease-in-out">
-                            <AnimatedWord word='Get Free Consultation' textColor="text-black" font='font-Inter'/>
+                        <NavLink to='/products' className="mx-auto block w-fit px-6 py-2 transition-all bg-mainGreen border-none hover:rounded-xl duration-1000 ease-in-out">
+                            <AnimatedWord word='Get Free Consultation' textColor="text-black" font='font-Inter' textSize="text-md"/>
                         </NavLink>
                     </motion.div>
                 </motion.div>
