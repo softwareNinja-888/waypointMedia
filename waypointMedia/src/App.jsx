@@ -6,6 +6,7 @@ import './App.css'
 import { Header } from "./components/Header"
 import { Hero } from "./components/Hero"
 import { SocialProof } from "./components/SocialProof"
+import { GrowthChart } from "./components/GrowthChart"
 
 import { ClientDisplay } from './components/helper/ClientDisplay'
 import { StickyBar } from './components/helper/StickyBar'
@@ -26,6 +27,7 @@ function App() {
         <SocialProof/>
         <ClientDisplay/>
       </div>
+      <GrowthChart/>
     </>
   )
 }

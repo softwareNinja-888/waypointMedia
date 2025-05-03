@@ -15,7 +15,7 @@ export function SocialProof(){
 
     return (
 
-        <div className="flex justify-between items-center bg-white/90 backdrop-blur-lg px-10 w-3/12 rounded-2xl mx-auto py-2">
+        <div className="flex justify-between items-center px-10 w-3/12 rounded-2xl mx-auto py-2">
             <LineHori/>
             <div className="font-Cal_Sans">Trusted by Popular Brands</div>
         </div>
