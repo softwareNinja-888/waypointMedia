@@ -5,6 +5,8 @@ import './App.css'
 
 import { Header } from "./components/Header"
 import { Hero } from "./components/Hero"
+import { SocialProof } from "./components/SocialProof"
+
 import { ClientDisplay } from './components/helper/ClientDisplay'
 import { StickyBar } from './components/helper/StickyBar'
 
@@ -20,7 +22,10 @@ function App() {
           <Hero/>
         </div>
       </div>
-      {/*<ClientDisplay/>*/}
+      <div className="flex items-end justify-center ">
+        <SocialProof/>
+        <ClientDisplay/>
+      </div>
     </>
   )
 }

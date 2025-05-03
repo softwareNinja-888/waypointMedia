@@ -4,7 +4,6 @@ import { AnimatedWord } from './helper/AnimatedWord'
 import { NavLink } from "react-router"
 
 export function Header({links}){
-    console.log('links:',links)
     return (
 
         <div className="flex justify-between items-center bg-white/90 backdrop-blur-lg px-10 w-11/12 rounded-2xl mx-auto py-2">
