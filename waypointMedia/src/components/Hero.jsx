@@ -89,7 +89,7 @@ export function Hero({content}) {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.98 }}
                 >
-                    <NavLink to='/products' className="mx-auto block w-fit ">
+                    <NavLink to='/contact' className="mx-auto block w-fit ">
                         <Btn text="Schedule Call" bg="bg-mainGreen border-none" textColor="text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Roboto" width='h-11 w-46'/>
                     </NavLink>
                 </motion.div>

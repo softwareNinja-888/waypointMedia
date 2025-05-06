@@ -9,9 +9,6 @@ import { MdHotel } from "react-icons/md";
 import { PiStrategyBold } from "react-icons/pi";
 import { FaBook } from "react-icons/fa";
 
-
-
-
 function ElText({title='Enter Title', description="Enter Description", activeNum, activeTab, setActiveTab,icon}) {
     return (
         <>
@@ -23,14 +20,6 @@ function ElText({title='Enter Title', description="Enter Description", activeNum
                 transition={{ duration: 0.2 }}
             >
                 <div className="flex items-center gap-0 text-2xl">
-                    {/*<motion.img 
-                        src={icon}
-                        alt="tick" 
-                        className="w-6 h-6"
-                        initial={{ scale: 1 }}
-                        animate={activeTab === activeNum ? { scale: [1, 1.2, 1] } : {}}
-                        transition={{ duration: 0.4 }}
-                    />*/}
                     <div
                         className="bg-mainGreen p-2 rounded-xl"
                         initial={{ scale: 1 }}
@@ -137,9 +126,6 @@ export function AboutHome({content}) {
                       )}
                     </AnimatePresence>
                 </div>
-                {/* <div className="flex-1 border-3 border-green-200">
-                    <img src="0.webp" alt="" className="w-full h-full rounded-2xl"/>
-                </div> */}
                   <div className='flex flex-col gap-6 flex-1'>
                       <div className="text-5xl font-Cal_Sans uppercase ">Marketing promises are everywhere. We deliver bookings.</div>
                         {AboutSections.map((el) => (
@@ -154,14 +140,6 @@ export function AboutHome({content}) {
                           />
                         ))}
                 </div>
-               {/* <div className="flex flex-col flex-1 border-3 border-red-200 gap-5">
-                    
-                </div>*/}
-               
-
-                 {/*<div className="col-start-1 col-span-2 row-start-4 bing ">
-                    <img src="1.webp" alt="" className="w-90 h-100 rounded-2xl"/>
-                </div>*/}
             </div>
         </>
     );

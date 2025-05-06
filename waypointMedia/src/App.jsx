@@ -14,47 +14,20 @@ import { ClientDisplay } from './components/helper/ClientDisplay'
 import { StickyBar } from './components/helper/StickyBar'
 import { AboutHome } from './components/AboutHome'
 
-const Information = (function (){
-  function createBasicInfo(name="Company Name",links=[],logoImg=''){
-      return {
-          name,
-          links,
-          logoImg,
-      }
-  }
-
-  return {createBasicInfo}
-})()
+import { content } from "@/assets/data/data"
 
 function App() {
 
-    const companyName = 'BluePeak Media'
-  // YOU CAN EDIT THIS INFORMATION TO MANIPULATE DATA IN COMPONENTS BELOW
-    const content = Information.createBasicInfo(
-    companyName,
-    ["Our Story","Portfolio","Pricing","Contact","FAQ"],
-    '/logo3.svg'
-  ) 
+  console.log('content:',content)
 
   return (
     <>
-      <div className="">
-        <StickyBar/>
-        <div className="bg-center bg-cover bg-no-repeat py-3 " style={{backgroundImage: "url('/28.webp')"}}>
-          <Header content={content}/>
-          <Hero content={content} />
-        </div>
-      </div>
       <div className="flex items-end justify-center ">
         <SocialProof/>
         <ClientDisplay/>
       </div>
       <GrowthChart/>
       <AboutHome content={content}/>
-      <div className="bg-start bg-cover bg-no-repeat py-30  " style={{backgroundImage: "url('/33.webp')"}}>
-        <Footer content={content}/>
-      </div>
-
     </>
   )
 }

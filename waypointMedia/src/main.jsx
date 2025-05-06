@@ -3,6 +3,12 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter,Route,Routes } from 'react-router'
 
 // COMPONENTS
+import { PricingPage } from './components/Pricing/PricingPage'
+import { Layout } from './components/Layout.jsx'
+
+// DATA
+import { content } from "@/assets/data/data"
+
 
 import './index.css'
 import App from './App.jsx'
@@ -11,11 +17,10 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/'>
+        <Route path='/' element={<Layout content={content}/>}>
           <Route index element={<App/>}/>
-          <Route path='services'>
-{/*            <Route index element={<ServiceHome/>}/>
-            <Route path=':service' element={<ServiceInfo/>}/>*/}
+          <Route path='pricing'>
+            <Route index element={<PricingPage/>}/>
           </Route>
         </Route>
       </Routes>

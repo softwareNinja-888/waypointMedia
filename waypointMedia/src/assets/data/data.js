@@ -28,8 +28,6 @@ export const createProject = (function(){
     }
 })()
 
-
-
 export const createPricing = (function(){
     let prices = [];
     let idCounter = 0;
@@ -59,6 +57,28 @@ export const createPricing = (function(){
     }
 })()
 
+
+const Information = (function (){
+  function createBasicInfo(name="Company Name",links=[],logoImg=''){
+      return {
+          name,
+          links,
+          logoImg,
+      }
+  }
+
+  return {createBasicInfo}
+})()
+
+const companyName = 'BluePeak Media'
+// YOU CAN EDIT THIS INFORMATION TO MANIPULATE DATA IN COMPONENTS BELOW
+export const content = Information.createBasicInfo(
+companyName,
+["Our Story","Portfolio","Pricing","Contact","FAQ"],
+'/logo3.svg'
+) 
+
+
 export const information = [
     {
         id:0,
@@ -73,7 +93,7 @@ export const information = [
         }
     },
     {
-        id:0,
+        id:2,
         name:'Pricing Info',
         get pricing(){
             return createPricing.getPricing()
@@ -133,46 +153,48 @@ createProject.addProject({
     gitHub:'',
 })
 
-// ADING PRICING
-
+// ADING PRICING 
 createPricing.addPrice({
-    type: 'Basic Package',
-    price: 800,
-    buttonText: "Choose Basic Package",
-    description: "Perfect for small businesses who want to showcase products or services online",
+    type: 'Starter Presence',
+    price: '2 000',
+    buttonText: "Choose Starter Presence",
+    description: "Ideal for smaller guesthouses or Airbnbs.",
     children: [
-        "- Custom Design",
-        "- Mobile Responsiveness",
-        "- Basic Contact Form",
-        "- SEO Optimization (basic)",
-        "- 2 Rounds of Revisions"
+        "1-page responsive website or landing page",
+        "Social media setup or 1 platform management (2 posts/week)",
+        "Basic Google Business setup",
+        "Review monitoring",
+        "Monthly analytics report"
       ]
 })
 createPricing.addPrice({
-    type: 'Standard Package',
-    price: 2000,
-    buttonText: "Choose Standard Package",
-    description: "Perfect for small and meduim businesses who truly want to standout from competiton online.",
+    type: 'Smart Growth',
+    price: '4 000',
+    buttonText: "Choose Smart Growth",
+    description: "Perfect for boutique hotels and lodges, who truly want to standout from competiton online.",
     children: [
-        "- Everyhing in Basic package",
-        "- Fully Personalized Design",
-        "- Interactive Features",
-        "- Advandced SEO & Anayltics",
-        "- Unlimited  Revisions"
+        "Full website (up to 5 pages)",
+        "Social media management ",
+        "Email marketing setup",
+        "CRM integration",
+        "Reputation management",
+        "Photography OR 360° virtual tour (1-time shoot)",
+        "Monthly reporting + recommendation",
       ]
 
-})
+}) 
 createPricing.addPrice({
-    type: 'Premium Package (Full Website)',
-    price: 5000,
-    buttonText: "Choose Premuim Package",
-    description: "Perfect for any businesses that wants to do their business online. Has everyhing in standard package plus below:",
+    type: 'Full Booking Funnel',
+    price: 'Custom',
+    buttonText: "Choose Full Booking Funnel",
+    description: "Perfect for high-end lodges, chains, or hotels aiming to maximize bookings.",
     children: [
-        "- Everyhing in Standard package",
-        "- 5 - 10 Pages ",
-        "- Advanced Animations & interactions",
-        "- E-commerce Integration & Blog Setup",
-        "- SEO Advanced (With keyword research)",
-        "- Unlimited Revisions",
+        "Advanced website (SEO-optimized, booking system integration)",
+        "Social media management",
+        "Email marketing setup",
+        "Full CRM system setup with guest automation",
+        "Review + Reputation Management",
+        "Full photography session + 360° virtual tour",
+        "Monthly performance strategy call"
       ]
 })
