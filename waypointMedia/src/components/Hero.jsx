@@ -1,5 +1,5 @@
 import { NavLink } from "react-router";
-import { AnimatedWord } from "./helper/AnimatedWord";
+import { Btn } from "./helper/Btn";
 import { motion } from "framer-motion";
 
 export function Hero({content}) {
@@ -81,7 +81,7 @@ export function Hero({content}) {
                     </motion.div>
 
                     <motion.div 
-                        className="font-inter text-center w-10/12 mx-auto"                        
+                        className="font-inter text-center w-8/12 mx-auto"                        
                         variants={itemVariants}
                     >
 
@@ -95,8 +95,8 @@ export function Hero({content}) {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.98 }}
                     >
-                        <NavLink to='/products' className="mx-auto block w-fit px-6 py-2 transition-all bg-white hover:bg-mainGreen border-none hover:rounded-xl duration-1500 ease-in-out">
-                            <AnimatedWord word='Get Free Consultation' textColor="text-black" font='font-Inter' textSize="text-md"/>
+                        <NavLink to='/products' className="mx-auto block w-fit ">
+                         <Btn text="Schedule Call" bg="bg-mainGreen border-none" textColor="text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Roboto" width='h-11 w-46'/>
                         </NavLink>
                     </motion.div>
                 </motion.div>
