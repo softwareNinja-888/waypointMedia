@@ -8,7 +8,7 @@ export function Header({content}){
 
         <div className="flex justify-between items-center bg-white/90 backdrop-blur-lg px-10 w-11/12 rounded-2xl mx-auto py-2 gap-0">
             {/* LOGO */}
-            <Logo textColor="text-black text-2xl"/>
+            <Logo name={content.name} textColor="text-black text-2xl" img={content.logoImg}/>
 
             {/* NAV LINKS */}
             <nav className="hidden md:flex md:space-x-10 lg:space-x-18 text-sm ">        

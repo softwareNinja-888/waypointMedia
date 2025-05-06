@@ -12,6 +12,7 @@ import { Footer } from "./components/Footer"
 
 import { ClientDisplay } from './components/helper/ClientDisplay'
 import { StickyBar } from './components/helper/StickyBar'
+import { AboutHome } from './components/AboutHome'
 
 const Information = (function (){
   function createBasicInfo(name="Company Name",links=[],logoImg=''){
@@ -27,7 +28,7 @@ const Information = (function (){
 
 function App() {
 
-    const companyName = 'Waypoint Media'
+    const companyName = 'BluePeak Media'
   // YOU CAN EDIT THIS INFORMATION TO MANIPULATE DATA IN COMPONENTS BELOW
     const content = Information.createBasicInfo(
     companyName,
@@ -49,6 +50,7 @@ function App() {
         <ClientDisplay/>
       </div>
       <GrowthChart/>
+      <AboutHome content={content}/>
       <div className="bg-start bg-cover bg-no-repeat py-30  " style={{backgroundImage: "url('/33.webp')"}}>
         <Footer content={content}/>
       </div>
