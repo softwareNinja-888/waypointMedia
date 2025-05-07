@@ -5,6 +5,7 @@ import { BrowserRouter,Route,Routes } from 'react-router'
 // COMPONENTS
 import { PricingPage } from './components/Pricing/PricingPage'
 import { Layout } from './components/Layout.jsx'
+import { Socials } from './components/helper/Socials'
 
 // DATA
 import { content } from "@/assets/data/data"
@@ -24,6 +25,8 @@ createRoot(document.getElementById('root')).render(
           </Route>
         </Route>
       </Routes>
+      <Socials/>
+
     </BrowserRouter>
   </StrictMode>,
 )
