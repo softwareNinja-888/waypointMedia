@@ -1,0 +1,36 @@
+import { motion } from 'framer-motion';
+
+function PricingToggle({ timeFrame, toggleTime }) {
+	return (
+		<div className="relative flex border border-white bg-white gap-1 py-2 w-57 justify-center items-center rounded-4xl mx-auto font-Cal_Sans">
+			{/* Animated background */}
+			<motion.div
+				layout
+				transition={{ type: 'spring', stiffness: 500, damping: 30 }}
+				className="absolute top-0 left-0 w-1/2 h-full bg-mainGreen rounded-4xl z-0"
+				style={{
+					transform: timeFrame === 'monthly' ? 'translateX(0%)' : 'translateX(100%)',
+				}}
+			/>
+
+			{/* Options */}
+			<div
+				className="w-1/2 text-center z-10 cursor-pointer py-3 px-5"
+				onClick={() => timeFrame !== 'monthly' && toggleTime()}
+			>
+				<span className={timeFrame === 'monthly' ? 'text-black font-semibold' : 'text-gray-600'}>
+					Monthly
+				</span>
+			</div>
+
+			<div
+				className="w-1/2 text-center z-10 cursor-pointer py-3 px-5"
+				onClick={() => timeFrame !== 'annually' && toggleTime()}
+			>
+				<span className={timeFrame === 'annually' ? 'text-black font-semibold' : 'text-gray-600'}>
+					Annually
+				</span>
+			</div>
+		</div>
+	);
+}

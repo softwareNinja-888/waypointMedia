@@ -15,10 +15,9 @@ import { StickyBar } from './components/helper/StickyBar'
 import { AboutHome } from './components/AboutHome'
 
 import { content } from "@/assets/data/data"
+import { PricingHome } from './components/PricingHome'
 
 function App() {
-
-  console.log('content:',content)
 
   return (
     <>
@@ -28,6 +27,7 @@ function App() {
       </div>
       <GrowthChart/>
       <AboutHome content={content}/>
+      <PricingHome/>
     </>
   )
 }

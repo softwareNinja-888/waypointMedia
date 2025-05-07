@@ -74,7 +74,7 @@ const companyName = 'BluePeak Media'
 // YOU CAN EDIT THIS INFORMATION TO MANIPULATE DATA IN COMPONENTS BELOW
 export const content = Information.createBasicInfo(
 companyName,
-["Our Story","Portfolio","Pricing","Contact","FAQ"],
+["Our Story","Portfolio","Pricing","Contact",],
 '/logo3.svg'
 ) 
 
@@ -97,7 +97,16 @@ export const information = [
         name:'Pricing Info',
         get pricing(){
             return createPricing.getPricing()
-        }
+        } ,
+        services: [
+                    {name:'Website',starter:'Is this okay',smartGrowth:'tick',fullBooking:'tick'},
+                    {name:'Social media management ',starter:'',smartGrowth:'',fullBooking:''},
+                    {name:'Email marketing',starter:'',smartGrowth:'',fullBooking:''},
+                    {name:'Full CRM system setup with guest automation',starter:'',smartGrowth:'',fullBooking:''},
+                    {name:'Review + Reputation Management',starter:'',smartGrowth:'',fullBooking:''},
+                    {name:'Full photography session + 360° virtual tour',starter:'',smartGrowth:'',fullBooking:''},
+                    {name:'Monthly performance strategy call',starter:'',smartGrowth:'',fullBooking:''},
+                ]
     }
 ]
 
@@ -156,7 +165,7 @@ createProject.addProject({
 // ADING PRICING 
 createPricing.addPrice({
     type: 'Starter Presence',
-    price: '2 000',
+    price: 2000,
     buttonText: "Choose Starter Presence",
     description: "Ideal for smaller guesthouses or Airbnbs.",
     children: [
@@ -169,7 +178,7 @@ createPricing.addPrice({
 })
 createPricing.addPrice({
     type: 'Smart Growth',
-    price: '4 000',
+    price: 4000,
     buttonText: "Choose Smart Growth",
     description: "Perfect for boutique hotels and lodges, who truly want to standout from competiton online.",
     children: [
