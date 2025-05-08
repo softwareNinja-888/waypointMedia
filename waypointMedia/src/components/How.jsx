@@ -4,8 +4,8 @@ function ProcessCard({num='001',name="Discovery",title='In-Depth discovery to un
     return (
         <>
             <div className="flex flex-row gap-20 text-2xl font-Playfair">
-                <div className="text-2xl font-Playfair">/{num}</div>
-                <div className="text-2xl font-Playfair min-w-40">{name}</div>
+                <div className="text-2xl font-Roboto">/{num}</div>
+                <div className="text-2xl font-Cal_Sans min-w-40">{name}</div>
                 <div className="flex flex-col gap-10">
                     <div className="font-Cal_Sans">{title}</div>
                     <div className="">{description}</div>

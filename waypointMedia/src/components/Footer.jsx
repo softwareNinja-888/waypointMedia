@@ -87,7 +87,7 @@ export function Footer({content}){
 
                 {/* CTA */}
                 <div className="mx-auto">
-                    <Btn text="Get Free Consultation" bg="bg-mainGreen border-none" textColor="text-black trasition-all duration-500 hover:rounded-xl " font="font-Inter" />
+                    <Btn text="Get Free Consultation" bg="bg-mainGreen border-none" textColor="text-black trasition-all duration-500 hover:rounded-xl " font="font-Poppins " width='w-60' />
                 </div>
             </div>
 

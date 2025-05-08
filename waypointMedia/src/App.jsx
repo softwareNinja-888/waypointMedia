@@ -17,17 +17,21 @@ import { Services } from './components/Services'
 import { content } from "@/assets/data/data"
 import { PricingHome } from './components/PricingHome'
 import { How } from './components/How'
+import { About } from './components/About'
+import { Gallery } from './components/Gallery'
 
 function App() {
 
   return (
     <>
+      <About content={content}/>
       <div className="flex items-end justify-center ">
         <SocialProof/>
         <ClientDisplay/>
       </div>
       <GrowthChart/>
       <Services content={content}/>
+      <Gallery/>
       <PricingHome/>
       <How/>
     </>
