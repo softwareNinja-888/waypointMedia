@@ -56,10 +56,6 @@ export function PricingPage(){
                         <div className="max-w-xl mx-auto text-center">
                             <h2 className="text-4xl font-bold text-black lg:text-5xl sm:text-5xl mb-10">Pricing &amp; Plans</h2>
                         </div>
-                        {/* <div className="flex border border-white bg-white gap-1 py-2 w-57 justify-center items-center rounded-4xl mx-auto">
-                            <div className={`${timeFrame === 'monthly' ? 'bg-mainGreen py-3 px-5 rounded-4xl font-Cal_Sans cursor-pointer' : ' bg-white py-3 px-5 rounded-4xl font-Cal_Sans cursor-pointer'}`} onClick={toggleTime}>Monthly</div>
-                            <div className={`${timeFrame === 'annually' ? 'bg-mainGreen py-3 px-5 rounded-4xl font-Cal_Sans cursor-pointer' : ' bg-white py-3 px-5 rounded-4xl font-Cal_Sans cursor-pointer'}`} onClick={toggleTime}>Annually</div>
-                        </div> */}
                         <PricingToggle timeFrame={timeFrame} toggleTime={toggleTime}/>
                         <PriceLg information={information} timeFrame={timeFrame} />
                     </div>

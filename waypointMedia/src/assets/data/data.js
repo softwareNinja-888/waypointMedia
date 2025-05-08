@@ -9,7 +9,7 @@ export const createProject = (function(){
                 id : idCounter++,
                 project_name: projectData.project_name,
                 description: projectData.description || ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero doloremque quisquam, dolores tempora fuga aliquam sint nisi unde quasi ut non excepturi accusamus ducimus voluptate! Deleniti facere nulla accusantium numquam.',
-                img: projectData.img || '/mockups/mockupHotel.png',
+                img: projectData.img || '/0.webp',
                 type: projectData.type || 'Landing Page',
                 link: projectData.link || '',
                 gitHub: projectData.gitHub || '',
@@ -112,53 +112,17 @@ export const information = [
 
 // ADDING PROJECTS
 createProject.addProject({
-    project_name: 'NOMA Skincare',
-    img: '/mockups/mockupNOMA.avif',
-    type: 'Landing Page',
+    project_name: 'Nova Heights',
+    img: '/0.webp',
+    type: 'Real Site',
     link: 'https://noma-skincare.vercel.app/',
     gitHub:'',
 })
 createProject.addProject({
-    project_name: 'Salt&Light Blog',
-    img: '/mockups/mockupBlog.avif',
-    type: ' Blog',
+    project_name: 'Royal Villas',
+    img: '/4.webp',
+    type: 'Showcase',
     link: 'https://salt-light-blog.vercel.app/',
-    gitHub:'',
-})
-createProject.addProject({
-    project_name: 'One Health',
-    img: '/mockups/mockupOneHealth.avif',
-    type: 'Landing Page',
-    link: 'https://one-health-three.vercel.app/',
-    gitHub:'',
-})
-createProject.addProject({
-    project_name: 'The Grand Hotel',
-    img: '/mockups/mockupHotel.avif',
-    type: 'Landing Page',
-    link: 'https://hotel-template-phi.vercel.app/',
-    gitHub:'',
-})
-
-createProject.addProject({
-    project_name: 'One Hope',
-    img: '/mockups/mockupOneHope.avif',
-    type: 'Landing Page',
-    link: 'https://one-hope-virid.vercel.app/',
-    gitHub:'',
-})
-createProject.addProject({
-    project_name: 'Salt&Light Ministries',
-    img: '/mockups/mockupSalt&light.avif',
-    type: 'Chrsitian Directory',
-    link: 'https://salt-light-9h3y.vercel.app/',
-    gitHub:'',
-})
-createProject.addProject({
-    project_name: 'Torch',
-    img: '/mockups/mockupTorch.avif',
-    type: 'Landing Page',
-    link: 'https://torch-one.vercel.app/',
     gitHub:'',
 })
 

@@ -1,8 +1,11 @@
 import { useState } from 'react';
 import { Btn } from './helper/Btn'
 import { motion, AnimatePresence } from 'framer-motion';
+import { Waves } from './helper/Waves';
+
 
 // ICONS
+import { GoDotFill } from "react-icons/go";
 import { FaChartLine } from "react-icons/fa6";
 import { MdVisibility } from "react-icons/md";
 import { MdHotel } from "react-icons/md";
@@ -47,7 +50,7 @@ function ElText({title='Enter Title', description="Enter Description", activeNum
         </>
     )
 }
-export function AboutHome({content}) {
+export function Services({content}) {
     const [activeTab, setActiveTab] = useState(0);
 
     const AboutSections = [
@@ -60,9 +63,14 @@ export function AboutHome({content}) {
 
     return (
         <>
-            <div className="flex bg-darkGray text-white h-fit px-6 gap-10 py-40 ">
-
-                 {/* Right Section - Image with Animation */}
+            <Waves waveColor='bg-darkGray'  bgColor='#F8F7F5' inverse={false}/>
+            <div className="bg-darkGray">
+                <div className="flex justify-center gap-2 text-5xl text-white text-center font-Cal_Sans uppercase">
+                    <GoDotFill className='text-mainGreen'/>
+                    Our Services
+                  </div>             
+                <div className="flex text-white h-fit px-6 gap-10 py-40 ">                  
+                  {/* Right Section - Image with Animation */}
                 <div className="flex-1">
                     <AnimatePresence mode="wait">
                       {activeTab === 0 && (
@@ -70,7 +78,7 @@ export function AboutHome({content}) {
                           key="image0"
                           alt="picture"
                           src="/0.webp"
-                          className="rounded-4xl object-cover w-full h-full"
+                          className="rounded-4xl object-cover w-full h-[660px]"
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
                           exit={{ opacity: 0 }}
@@ -82,7 +90,7 @@ export function AboutHome({content}) {
                           key="image1"
                           alt="picture"
                           src="/1.webp"
-                          className="rounded-4xl object-cover object-top w-full h-full"
+                          className="rounded-4xl object-cover object-top w-full h-[660px]"
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
                           exit={{ opacity: 0 }}
@@ -94,7 +102,7 @@ export function AboutHome({content}) {
                           key="image2"
                           alt="picture"
                           src="/3.webp"
-                          className="rounded-4xl object-cover w-full h-full"
+                          className="rounded-4xl object-cover w-full h-[660px]"
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
                           exit={{ opacity: 0 }}
@@ -106,7 +114,7 @@ export function AboutHome({content}) {
                           key="image2"
                           alt="picture"
                           src="/4.webp"
-                          className="rounded-4xl object-cover w-full h-full"
+                          className="rounded-4xl object-cover w-full h-[660px]"
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
                           exit={{ opacity: 0 }}
@@ -117,7 +125,7 @@ export function AboutHome({content}) {
                           key="image2"
                           alt="picture"
                           src="/6.webp"
-                          className="rounded-4xl object-cover w-full h-full"
+                          className="rounded-4xl object-cover w-full h-[660px]"
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
                           exit={{ opacity: 0 }}
@@ -126,7 +134,7 @@ export function AboutHome({content}) {
                       )}
                     </AnimatePresence>
                 </div>
-                  <div className='flex flex-col gap-6 flex-1'>
+                <div className='flex flex-col gap-6 flex-1'>
                       <div className="text-5xl font-Cal_Sans uppercase ">Marketing promises are everywhere. We deliver bookings.</div>
                         {AboutSections.map((el) => (
                           <ElText
@@ -140,6 +148,7 @@ export function AboutHome({content}) {
                           />
                         ))}
                 </div>
+              </div>
             </div>
         </>
     );

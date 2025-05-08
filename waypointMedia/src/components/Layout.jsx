@@ -14,8 +14,8 @@ export function Layout({content}){
 				<div className="">
 					{location.pathname === '/' ? (
 						<>
-							<StickyBar/>
-							<div className="bg-center bg-cover bg-no-repeat py-3 " style={{backgroundImage: "url('/28.webp')"}}>
+							<StickyBar promo={`Start growing with ${content.name} Today!`}/>
+							<div className="bg-center bg-cover bg-no-repeat py-6 " style={{backgroundImage: "url('/bg/1.avif')"}}>
 							  <Header content={content}/>
 							  <Hero content={content} />
 							</div>

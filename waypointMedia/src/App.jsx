@@ -12,10 +12,11 @@ import { Footer } from "./components/Footer"
 
 import { ClientDisplay } from './components/helper/ClientDisplay'
 import { StickyBar } from './components/helper/StickyBar'
-import { AboutHome } from './components/AboutHome'
+import { Services } from './components/Services'
 
 import { content } from "@/assets/data/data"
 import { PricingHome } from './components/PricingHome'
+import { How } from './components/How'
 
 function App() {
 
@@ -26,8 +27,9 @@ function App() {
         <ClientDisplay/>
       </div>
       <GrowthChart/>
-      <AboutHome content={content}/>
+      <Services content={content}/>
       <PricingHome/>
+      <How/>
     </>
   )
 }
