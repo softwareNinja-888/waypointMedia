@@ -6,7 +6,7 @@ import { NavLink } from "react-router"
 export function Header({content}){
     return (
 
-        <div className="flex justify-between items-center bg-white/90 backdrop-blur-lg px-10 w-11/12 rounded-2xl mx-auto py-2 gap-0">
+        <div className="flex justify-between items-center bg-white/90 backdrop-blur-lg px-10 w-11/12 rounded-2xl mx-auto py-2 gap-0 ">
             {/* LOGO */}
             <Logo name={content.name} textColor="text-black text-2xl" img={content.logoImg}/>
 

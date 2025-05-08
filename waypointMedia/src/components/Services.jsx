@@ -66,7 +66,6 @@ export function Services({content}) {
             <Waves waveColor='bg-darkGray'  bgColor='#F8F7F5' inverse={false}/>
             <div className="bg-darkGray">
                 <div className="flex justify-center gap-2 text-5xl text-white text-center font-Cal_Sans uppercase">
-                    <GoDotFill className='text-mainGreen'/>
                     Our Services
                   </div>             
                 <div className="flex text-white h-fit px-6 gap-10 py-40 ">                  

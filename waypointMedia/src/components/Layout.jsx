@@ -15,7 +15,7 @@ export function Layout({content}){
 					{location.pathname === '/' ? (
 						<>
 							<StickyBar promo={`Start growing with ${content.name} Today!`}/>
-							<div className="bg-center bg-cover bg-no-repeat py-6 " style={{backgroundImage: "url('/bg/1.avif')"}}>
+							<div className="bg-center bg-cover bg-no-repeat py-6  " style={{backgroundImage: "url('/bg/1.avif')"}}>
 							  <Header content={content}/>
 							  <Hero content={content} />
 							</div>

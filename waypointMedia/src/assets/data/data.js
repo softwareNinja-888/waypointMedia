@@ -113,14 +113,39 @@ export const information = [
 // ADDING PROJECTS
 createProject.addProject({
     project_name: 'Nova Heights',
-    img: '/0.webp',
+    img: '/bg/11.avif',
     type: 'Real Site',
     link: 'https://noma-skincare.vercel.app/',
     gitHub:'',
 })
+
 createProject.addProject({
     project_name: 'Royal Villas',
-    img: '/4.webp',
+    img: '/bg/12.avif',
+    type: 'Showcase',
+    link: 'https://salt-light-blog.vercel.app/',
+    gitHub:'',
+})
+
+createProject.addProject({
+    project_name: 'Royal Villas',
+    img: '/bg/13.avif',
+    type: 'Showcase',
+    link: 'https://salt-light-blog.vercel.app/',
+    gitHub:'',
+})
+
+createProject.addProject({
+    project_name: 'Royal Villas',
+    img: '/bg/14.avif',
+    type: 'Showcase',
+    link: 'https://salt-light-blog.vercel.app/',
+    gitHub:'',
+})
+
+createProject.addProject({
+    project_name: 'Royal Villas',
+    img: '/15.webp',
     type: 'Showcase',
     link: 'https://salt-light-blog.vercel.app/',
     gitHub:'',

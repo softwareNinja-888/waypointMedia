@@ -29,7 +29,7 @@ function Stat({ targetNumber = 100, name = 'Stat Name', isVisible ,className}) {
     const suffix = targetNumber.includes('%') ? '%' : targetNumber.includes('+') ? '+' : '';
   
     return (
-      <div className={`flex flex-col justify-center items-center bg-grayBg w-full h-40 rounded-2xl ${className}`}>
+      <div className={`flex flex-col justify-center items-center bg-grayBg w-full h-40 rounded-2xl ${className} bg-white/45 backdrop-blur-lg`}>
         <div className="text-4xl ">
           {count}{suffix}
         </div>
@@ -66,7 +66,7 @@ export function About({content}) {
     return (
         <>
             <div className="flex flex-col md:flex-row px-20 py-20 gap-20">
-                <div className="text-3xl font-Cal_Sans flex-1/2 self-center">{content.name} is a dynamic and innovative social media marketing firm specilizing in the Tourism market, based in the heart of Eswatini</div>
+                <div className="text-3xl font-Cal_Sans flex-1/2 self-center">{content.name} is a dynamic and innovative social media marketing firm specializing in the Tourism market, based in the heart of Eswatini</div>
                 <div className="grid grid-cols-2 gap-3 flex-1/2 font-Poppins" ref={statsRef}>
 
                     {/* IMCREMENTING STATS */}
@@ -78,3 +78,4 @@ export function About({content}) {
         </>
     );
 }
+

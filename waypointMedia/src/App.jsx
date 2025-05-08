@@ -19,19 +19,25 @@ import { PricingHome } from './components/PricingHome'
 import { How } from './components/How'
 import { About } from './components/About'
 import { Gallery } from './components/Gallery'
+import { WhyUs } from './components/WhyUs'
+import { Projects } from './components/Projects'
 
 function App() {
 
   return (
     <>
-      <About content={content}/>
-      <div className="flex items-end justify-center ">
-        <SocialProof/>
-        <ClientDisplay/>
+      <div className="bg-center bg-cover bg-no-repeat py-40" style={{backgroundImage:"url('/bg/shape2.avif')"}}>
+        <About content={content}/>
+        <div className="flex items-end justify-center ">
+          <SocialProof/>
+          <ClientDisplay/>
+        </div>
+        <GrowthChart/>
       </div>
-      <GrowthChart/>
       <Services content={content}/>
+      <WhyUs content={content}/>
       <Gallery/>
+      <Projects/>
       <PricingHome/>
       <How/>
     </>

@@ -26,7 +26,7 @@ function Card({img='/bg/11.avif',name="Coast Villa"}){
 export function Gallery() {
     return (
         <>
-            <div className="flex flex-col gap-10 py-40">
+            <div className="flex flex-col gap-10 py-40" >
                 <div className="flex justify-center gap-2 text-6xl text-black text-center font-Cal_Sans uppercase">
                     Gallery                        
                   </div> 

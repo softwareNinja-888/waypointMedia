@@ -19,13 +19,13 @@ export function How() {
     return (
         <>
             <div className="flex flex-col gap-5 py-20">
-                <div className="flex justify-center gap-2 text-2xl text-black text-center font-Cal_Sans uppercase">
+                <div className="flex justify-center items-center gap-2 text-2xl text-black text-center font-Cal_Sans uppercase">
                     <GoDotFill className='text-mainGreen'/>
                     How it works
                 </div> 
                 <div className="text-4xl text-black text-center font-Cal_Sans w-[35%] mx-auto">Easy and Seamless process from request to delivery</div>
                 <div className="flex flex-col mx-auto w-9/12 gap-25 py-20">
-                    <ProcessCard/>
+                    <ProcessCard name='Free Consultation'/>
                     <ProcessCard num='002' name="Design" title='Strategic Roadmap creation for a purposeful and impactful design'/>
                     <ProcessCard num='003'/>
                     <ProcessCard num='004'/>
