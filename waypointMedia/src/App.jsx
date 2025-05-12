@@ -14,7 +14,8 @@ import { ClientDisplay } from './components/helper/ClientDisplay'
 import { StickyBar } from './components/helper/StickyBar'
 import { Services } from './components/Services'
 
-import { content } from "@/assets/data/data"
+// import { content } from "@/assets/data/data"
+import { useContent } from "@/context/ContentContext";
 import { PricingHome } from './components/PricingHome'
 import { How } from './components/How'
 import { About } from './components/About'
@@ -23,6 +24,8 @@ import { WhyUs } from './components/WhyUs'
 import { Projects } from './components/Projects'
 
 function App() {
+  
+  const content = useContent()
 
   return (
     <>

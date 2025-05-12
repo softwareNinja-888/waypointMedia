@@ -42,7 +42,7 @@ export function  PortfolioCard({
   };
 
 
-export function PortfolioHome(){
+export function PortfolioPage(){
       const [showCard, setShowCard] = useState("all");
     
       const handleProject = (type) => {
