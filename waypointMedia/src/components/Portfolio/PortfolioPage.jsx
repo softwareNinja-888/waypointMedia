@@ -26,7 +26,7 @@ export function  PortfolioCard({
         >
            <NavLink to={project.link} target='_blank' className={`flex flex-col gap-5`}>
                     <div className="">
-                        <img src={project.img} alt={`${project.project_name} mockup`} className="cursor-pointer h-110 w-full" />
+                        <img src={project.img} alt={`${project.project_name} mockup`} className="cursor-pointer h-96 w-90" />
                     </div>
                     <div className="px-5 text-blue-600">
                         <div className="flex justify-between">
@@ -57,7 +57,7 @@ export function PortfolioPage(){
     
       return (
         <>
-          <section className="pt-20 pb-12 lg:pt-[20px] lg:pb-[90px] bg-gradient-to-t from-mainGreen to-[#f8f7f5]">
+          <section className="pt-20 pb-12 lg:pt-[20px] lg:pb-[90px] bg-gradient-to-t from-mainGreen to-[#f8f7f5] overflow-hidden">
             <div className="container mx-auto">
               <div className="flex flex-wrap -mx-4">
                 <div className="w-full px-4">
@@ -98,7 +98,7 @@ export function PortfolioPage(){
                   </ul>
                 </div>
               </div>
-              <div className="flex flex-wrap -mx-4 gap-y-20">
+              <div className="flex flex-wrap  items-center mx-10 gap-y-20">
                 
                   {Projects.map((project,index)=>{
                     return(

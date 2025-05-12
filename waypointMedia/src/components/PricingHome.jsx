@@ -153,6 +153,7 @@ export function PricingHome() {
 					})}
 				</div>
 			</div>
+			<Waves inverse={true}/>
 		</>
 	)
 }
