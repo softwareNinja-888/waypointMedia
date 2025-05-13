@@ -68,31 +68,44 @@ export function Hero({content}) {
 
 
                 <motion.div 
-                    className="text-4xl font-Cal_Sans text-center"
+                    className="text-xl md:text-4xl font-Cal_Sans text-center"
                     variants={itemVariants}
                 > 
                     Enter the new age of digital innovation
                 </motion.div>
 
                 <motion.div 
-                    className="font-inter text-center w-8/12 mx-auto"                        
+                    className="font-Roboto text-center w-12/12 md:w-12/12 mx-auto text-md md:text-md"                        
                     variants={itemVariants}
                 >
 
                     {/* Subtext */}
-                    Reimagine your digital presence with {content.name} —
-                    where next-gen technologies meet design.
+                    
+                    Reimagine your digital presence with {content.name} — a forward-thinking tourism marketing agency where cutting-edge technology, creative strategy, and visual storytelling come together to elevate your brand, captivate your audience, and drive real-world results.
+
+
                 </motion.div>
 
-                <motion.div
-                    variants={itemVariants}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.98 }}
-                >
-                    <NavLink to='/contact' className="mx-auto block w-fit ">
-                        <Btn text="Schedule Call" bg="bg-mainGreen border-none" textColor="text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Roboto" width='h-11 w-46'/>
-                    </NavLink>
-                </motion.div>
+                <div className="flex flex-row justify-center gap-3">
+                    <motion.div
+                        variants={itemVariants}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.98 }}
+                    >
+                        <NavLink to='/portfolio' className="mx-auto block w-fit ">
+                            <Btn text="See Projects" bg="bg-mainGreen border-none" textColor="text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Inter" width='w-30 h-10 md:h-11 md:w-46'/>
+                        </NavLink>
+                    </motion.div>
+                    <motion.div
+                        variants={itemVariants}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.98 }}
+                    >
+                        <NavLink to='/contact' className="mx-auto block w-fit ">
+                            <Btn text="Schedule Call" bg="bg-mainGreen border-none" textColor="text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Inter" width='w-30 h-10 md:h-11 md:w-46'/>
+                        </NavLink>
+                    </motion.div>
+                </div>
             </motion.div>
         </>
 
