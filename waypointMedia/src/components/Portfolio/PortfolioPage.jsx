@@ -4,6 +4,8 @@ import { createProject } from "../../assets/data/data";
 import { MdLinearScale } from "react-icons/md";
 import { NavLink } from "react-router";
 import { Waves } from '../helper/Waves';
+import { GoDotFill } from "react-icons/go";
+
 
 
 export function  PortfolioCard({
@@ -53,7 +55,6 @@ export function PortfolioPage(){
     const Projects = information[1].projects
     const types = ['All',...new  Set(Projects.map(item => item.type))];
     const numberOfProjectsCompleted = 3;
-    console.log(types.map(type=>type.toLowerCase()))
     
       return (
         <>
@@ -62,13 +63,15 @@ export function PortfolioPage(){
               <div className="flex flex-wrap -mx-4">
                 <div className="w-full px-4">
                   <div className="mx-auto mb-[60px] max-w-[510px] text-center">
-                    <span className="text-primary mb-2 block text-lg font-semibold">
+                    <div className="flex justify-center items-center gap-2 text-md font-Cal_Sans mb-5 text-black text-center  uppercase">
+                      <GoDotFill className='text-mainGreen'/>
                       Our Portfolio
-                    </span>
-                    <h2 className="text-black font-Cal_Sans mb-3 text-3xl leading-[1.208] font-bold sm:text-4xl md:text-[40px]">
+                    </div> 				
+                    
+                    <h2 className="text-black  mb-3 text-3xl leading-[1.208] font-Cal_Sans sm:text-4xl md:text-[40px]">
                       Our Recent Projects
                     </h2>
-                    <p className="text-black text-base dark:text-dark-6">
+                    <p className="text-black text-base font-Roboto">
                       There are many variations of passages of Lorem Ipsum available
                       but the majority have suffered alteration in some form.
                     </p>

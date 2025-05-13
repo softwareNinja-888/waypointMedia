@@ -5,8 +5,8 @@ export function Logo({ name='WayPoint Media',textColor='text-white text-3xl',bg=
 
     return (
         <>
-            <NavLink to='/' className={`flex justify-center items-center gap-2 cursor-pointer font-Cal_Sans ${textColor}`} >
-                <div>{name}</div>
+            <NavLink to='/' className={`flex justify-center items-center gap-2 cursor-pointer font-Cal_Sans ${textColor} `} >
+                <div className="md:block text-sm lg:text-xl">{name}</div>
                 <div>
                     <img src={img} alt="logo" className="w-8 h-8"/>
                 </div>
