@@ -31,7 +31,7 @@ function App() {
     <>
       <div className="bg-center bg-cover bg-no-repeat py-40" style={{backgroundImage:"url('/bg/shape2.avif')"}}>
         <About content={content}/>
-        <div className="flex items-end justify-center ">
+        <div className="flex md:flex-row flex-col md:items-end justify-center ">
           <SocialProof/>
           <ClientDisplay/>
         </div>
