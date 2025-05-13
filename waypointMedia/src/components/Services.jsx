@@ -31,12 +31,12 @@ function ElText({title='Enter Title', description="Enter Description", activeNum
                     >
                         {icon}
                     </div>
-                    <div className="font-Cal_Sans px-5">{title}</div> 
+                    <div className="font-Cal_Sans px-5 text-sm md:text-lg lg:text-xl">{title}</div> 
                 </div>
                 <AnimatePresence>
                     {activeTab === activeNum && (
                         <motion.div 
-                            className="px-15 font-Inter"
+                            className="px-15 font-Roboto text-sm lg:text-md"
                             initial={{ height: 0, opacity: 0 }}
                             animate={{ height: "auto", opacity: 1 }}
                             exit={{ height: 0, opacity: 0 }}
@@ -69,8 +69,9 @@ export function Services({content}) {
                     Our Services
                   </div>             
                 <div className="flex text-white h-fit px-6 gap-10 py-40 ">                  
-                  {/* Right Section - Image with Animation */}
-                <div className="flex-1">
+
+                {/* Left Section - Image with Animation */}
+                <div className="flex-1 hidden md:flex">
                     <AnimatePresence mode="wait">
                       {activeTab === 0 && (
                         <motion.img
@@ -133,19 +134,25 @@ export function Services({content}) {
                       )}
                     </AnimatePresence>
                 </div>
-                <div className='flex flex-col gap-6 flex-1'>
+
+                {/* Right Section - Image with Animation */}
+                <div className='flex flex-col  gap-6 flex-1'>
                       <div className="text-5xl font-Cal_Sans uppercase ">Marketing promises are everywhere. We deliver bookings.</div>
+
+                       <div className="flex flex-col gap-6 mt-5">
                         {AboutSections.map((el) => (
-                          <ElText
-                            key={el.id}
-                            title={el.title}
-                            description={el.description}
-                            activeTab={activeTab}
-                            setActiveTab={setActiveTab}
-                            activeNum={el.id}
-                            icon={el.icon}
-                          />
-                        ))}
+                            <ElText
+                              key={el.id}
+                              title={el.title}
+                              description={el.description}
+                              activeTab={activeTab}
+                              setActiveTab={setActiveTab}
+                              activeNum={el.id}
+                              icon={el.icon}
+                            />
+                          ))}
+                       </div>
+                      
                 </div>
               </div>
             </div>
