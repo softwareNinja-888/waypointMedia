@@ -54,17 +54,17 @@ export function Projects() {
             >
                 <div className="text-xl font-Cal_Sans text-blue-600">Portfolio</div>
                 <div className="text-3xl font-Cal_Sans">Check out our popular projects</div>
-                <div className="font-Poppins">
+                <div className="font-Roboto">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati suscipit porro asperiores numquam magnam enim voluptatibus, a explicabo. Aliquid mollitia obcaecati deleniti nisi natus temporibus ducimus odit officia pariatur quasi.
                 </div>
                 <motion.div>
                     <NavLink 
                         to='/portfolio' 
                         id="learn_more" 
-                        className="flex gap-2 bg-mainGreen w-6/12 justify-center items-center py-3 transition-all duration-500 ease-in-out  text-black hover:scale-101 hover:rounded-sm"
+                        className="group flex gap-2 bg-mainGreen w-6/12 justify-center items-center py-3 transition-all duration-500 ease-in-out  text-black hover:scale-103 hover:rounded-sm"
                     >
-                        <span className="text-lg font-Roboto">See Projects</span>
-                        <IoIosArrowForward  size={16} />
+                        <span className="text-lg font-Roboto ">See Projects</span>
+                        <IoIosArrowForward  size={16}  className="group-hover:text-white transition-all duration-600"/>
                     </NavLink>
                 </motion.div>
             </motion.div>

@@ -147,7 +147,7 @@ export function PricingHome() {
 					Choose Plan
 				</motion.div>
 				<PricingToggle timeFrame={timeFrame} toggleTime={toggleTime}/>
-				<div className="flex gap-10 px-10">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-10">
 					{pricingInfo.map((el)=>{
 					return <PricingCard key={el.id} priceInfo={el} timeFrame={timeFrame}/>
 					})}
