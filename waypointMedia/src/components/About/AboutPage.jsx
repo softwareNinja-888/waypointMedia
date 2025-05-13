@@ -79,7 +79,7 @@ function SectionIntro({Sectitle='About Us',title='Great Team & Values',descripti
 
 function EmployeeCard({name,position,img='/12.webp',about="Passionate about blending modern aesthetics with functionality. Ethan ensures every design embodies innovation and sustainability.",}){
 	return (
-		<div className="flex flex-col w-[480px] gap-5 bg-white rounded-2xl px-3 py-6 ">
+		<div className="flex flex-col w-full gap-5 bg-white rounded-2xl px-3 py-6 ">
 			<div className="">
 				<img src={img} alt="" className="w-full h-120" />
 			</div>
@@ -123,7 +123,7 @@ export function AboutPage(){
 	return (
 		<>
 			<div className="flex flex-col gap-20 bg-center bg-cover bg-no-repeat rounded-3xl" style={{backgroundImage:"url('/bg/shape2.avif')"}}>
-				<div className="flex gap-10 w-10/12 mx-auto  px-0 py-12 rounded-3xl">
+				<div className="flex flex-col md:flex-row gap-10 w-11/12 lg:w-10/12 mx-auto  px-0 py-12 rounded-3xl">
 					<div className="flex-1/2">
 						<div className="text-5xl font-Cal_Sans mb-5">Our Story</div>
 						<div className="flex flex-col gap-4 mb-5">
@@ -140,10 +140,10 @@ export function AboutPage(){
 						<img src="/32.webp" alt="office image" className="h-full w-full rounded-3xl " />
 					</div>
 				</div>
-				<div className="w-10/12 mx-auto ">
+				<div className="w-11/12 md:w-10/12 mx-auto ">
 					<SectionIntro/>
 					{/* GRID IMAGES */}
-					<div className="grid grid-cols-3 grid-rows-2 gap-4 mt-10">
+					<div className="grid grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-4 mt-10">
 						<div className="row-span-2 row-start-1">
 							<img src="/about/a1.avif" alt="office image" className="h-full rounded-2xl" />
 						</div>
@@ -159,7 +159,7 @@ export function AboutPage(){
 						
 					</div>
 					{/* ICON DESCRIPTIONS */}
-					<div className="flex flex-row justify-center gap-20 mt-10">
+					<div className="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 lg:gap-20 mt-10">
 						<Card name='Integrity' icon={<FaHandshake size={30}/>}/>
 						<Card name='Customer-Centered' icon={<AiFillCustomerService size={30}/>}/>
 						<Card name='Excellence' icon={<FaTrophy size={30}/>}/>
@@ -167,7 +167,7 @@ export function AboutPage(){
 				</div>
 				<div className="w-10/12 mx-auto">
 					<SectionIntro description="Meet our amazing team behind our excellence"/>
-					<div className="grid grid-cols-2 mt-10 gap-y-16">
+					<div className="grid grid-cols-1 md:grid-cols-2 mt-10 gap-y-20 gap-x-10">
 						<EmployeeCard name='Ethan Carter' position="Social Media Marketer" img="/13.webp"/>
 						<EmployeeCard name='Bayanda Dlamini' position="Web Developer" img="/12.webp"/>
 						<EmployeeCard name='Bayanda Dlamini' position="Web Developer" img="/about/a5.avif"/>
@@ -183,7 +183,7 @@ export function AboutPage(){
 				</div>
 				<div className="w-10/12 mx-auto">
 					<SectionIntro Sectitle="Why We stand out" title="Why Choose Us" description="We believe in perfection with structure"/>
-					<div className="grid grid-cols-3 mt-10 gap-y-16">
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-y-8 md:gap-y-16 gap-x-10">
 						<Card name='Niche expertise in hospitality'/>
 						<Card name='Content tailored for tourism' icon={<AiFillCustomerService size={30}/>}/>
 						<Card name='Proven Growth Strategies' icon={<FaTrophy size={30}/>}/>

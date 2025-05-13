@@ -18,7 +18,7 @@ function ProcessCard({num='001',name="Discovery",title='In-Depth discovery to un
 export function How() {
     return (
         <>
-            <div className="flex flex-col gap-5 py-20 px-5 md:px-0">
+            <div className="flex flex-col gap-5 py-20 px-5 md:px-0 bg-center bg-cover bg-no-repeat" style={{backgroundImage:"url('/bg/shape2.avif')"}}>
                 <div className="flex justify-center items-center gap-2 text-2xl text-black text-center font-Cal_Sans uppercase">
                     <GoDotFill className='text-mainGreen'/>
                     How it works

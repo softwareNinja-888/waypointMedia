@@ -80,15 +80,15 @@ export function Footer({content}){
 
        <div className="flex flex-col gap-30">
             {/* FOOTER MESSAGE*/}
-            <div className="flex flex-col gap-8 mx-auto w-7/12 ">
+            <div className="flex flex-col gap-8 mx-auto w-11/12 md:w-7/12 ">
                 <div className="text-6xl font-Cal_Sans text-center"> 
                     Ready to grow your digital presence?
                 </div>
 
                 {/* CTA */}
-                <div className="mx-auto">
+                <NavLink to='/contact' className="mx-auto">
                     <Btn text="Get Free Consultation" bg="bg-mainGreen border-none" textColor="text-black trasition-all duration-500 hover:rounded-xl " font="font-Poppins " width='w-60' />
-                </div>
+                </NavLink>
             </div>
 
             {/* FOOTER INFO*/}
