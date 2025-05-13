@@ -54,11 +54,11 @@ export function Services({content}) {
     const [activeTab, setActiveTab] = useState(0);
 
     const AboutSections = [
-        {id:0, icon:<FaBook/>, title:'Booking-Focused Campaigns', description:'We don’t just boost engagement—we design campaigns that fill rooms and increase direct reservations.'},
-        {id:1, icon:<MdVisibility/>, title:'Brand Visibility', description:'Stay top of mind. We position your brand where it matters—on the feeds and screens of your ideal guests.'},
-        {id:2, icon:<MdHotel/>, title:'Guest Engagement', description:'Turn likes into loyalty. We create meaningful content that builds real connections with your audience.'},
-        {id:3, icon:<PiStrategyBold/>, title:'Custom Strategy', description:'No templates. Just tailored social media plans built around your property’s goals and target market.'},
-        {id:4, icon:<FaChartLine/>, title:'Performance Tracking', description:'See what’s working—instantly. Get custom analytics and reports that show exactly where your growth is coming from.'}
+        {id:0, icon:<FaBook/>, title:'Social Media Management', description:'We don’t just boost engagement—we design campaigns that fill rooms and increase direct reservations.'},
+        {id:1, icon:<MdVisibility/>, title:'Content Creation (Photography + Video)', description:'Stay top of mind. We position your brand where it matters—on the feeds and screens of your ideal guests.'},
+        {id:2, icon:<MdHotel/>, title:'Influencer Collaborations', description:'Turn likes into loyalty. We create meaningful content that builds real connections with your audience.'},
+        {id:3, icon:<PiStrategyBold/>, title:'Paid Advertising Campaigns', description:'No templates. Just tailored social media plans built around your property’s goals and target market.'},
+        {id:4, icon:<FaChartLine/>, title:'Reputation Management', description:'See what’s working—instantly. Get custom analytics and reports that show exactly where your growth is coming from.'}
     ];
 
     return (
