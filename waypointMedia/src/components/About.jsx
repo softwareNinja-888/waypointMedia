@@ -30,10 +30,10 @@ function Stat({ targetNumber = 100, name = 'Stat Name', isVisible ,className}) {
   
     return (
       <div className={`flex flex-col justify-center items-center bg-grayBg w-full h-40 rounded-2xl ${className} bg-white/45 backdrop-blur-lg`}>
-        <div className="text-4xl ">
+        <div className=" text-2xl lg:text-4xl font-Roboto">
           {count}{suffix}
         </div>
-        <div className="font-">{name}</div>
+        <div className="sm:text-4xl md:text-lg lg:text-2xl font-Roboto">{name}</div>
       </div>
     );
   }
@@ -65,8 +65,8 @@ export function About({content}) {
 
     return (
         <>
-            <div className="flex flex-col md:flex-row px-20 py-20 gap-20">
-                <div className="text-3xl font-Cal_Sans flex-1/2 self-center">{content.name} is a dynamic and innovative social media marketing firm specializing in the Tourism market, based in the heart of Eswatini</div>
+            <div className="flex flex-col md:flex-row md:px-10 lg:px-20 py-20 gap-20">
+                <div className="text-center text-2xl lg:text-3xl font-Cal_Sans flex-1/2 self-center">{content.name} is a dynamic and innovative social media marketing firm specializing in the Tourism market, based in the heart of Eswatini</div>
                 <div className="grid grid-cols-2 gap-3 flex-1/2 font-Poppins" ref={statsRef}>
 
                     {/* IMCREMENTING STATS */}
