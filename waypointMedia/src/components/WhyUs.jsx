@@ -44,7 +44,7 @@ export function WhyUs({content}){
 			<>
 				<div className=" bg-center bg-cover bg-no-repeat py-40" style={{backgroundImage:"url('/bg/shape2.avif')"}}>
 					<div className="flex flex-col md:flex-row w-11/12 mx-auto items-center gap-20 py-20 ">
-						<div className=" text-5xl font-Cal_Sans flex-1/3">
+						<div className=" text-5xl font-Cal_Sans flex-1/3 ">
 							Why Choose <span className="bg-mainGreen">{content.name},</span> for your Marketing Efforts?
 						</div>
 						<div className="flex-2/3">

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { TiTick } from "react-icons/ti";
+import { TiCancel, TiTick } from "react-icons/ti";
 
 
 function formatCurrency(currency,number) {
@@ -51,12 +51,18 @@ function PriceRow({name="",starter='-',smartGrowth='-',fullBooking='-',}){
         </div>
     </>
 
+    const x = <>
+        <div className="flex items-center bg-grayBg px-1 rounded-full w-5 h-5 mx-auto">
+            <TiCancel size={16}/>
+        </div>
+    </>
+
     return (
         <>
             <tr>
                 <td className="py-4 pr-4 font-Cal_Sans  text-black border-b border-gray-200">{name}</td>
 
-                <td className="px-4 py-4 text-center  text-black border-b border-gray-200">{starter === 'tick' ? tick : starter}</td>
+                <td className="px-4 py-4 text-center  text-black border-b border-gray-200">{starter === 'tick' ? tick : x}</td>
 
                 <td className="px-4 py-4 text-center  text-black border-b border-gray-200">{smartGrowth === 'tick' ? tick : smartGrowth}</td>
 

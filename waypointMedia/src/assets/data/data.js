@@ -99,7 +99,7 @@ export const information = [
             return createPricing.getPricing()
         } ,
         services: [
-                    {name:'Website',starter:'Is this okay',smartGrowth:'tick',fullBooking:'tick'},
+                    {name:'Website',starter:'tick',smartGrowth:'tick',fullBooking:'tick'},
                     {name:'Social media management ',starter:'',smartGrowth:'',fullBooking:''},
                     {name:'Email marketing',starter:'',smartGrowth:'',fullBooking:''},
                     {name:'Full CRM system setup with guest automation',starter:'',smartGrowth:'',fullBooking:''},
@@ -113,7 +113,7 @@ export const information = [
 // ADDING PROJECTS
 createProject.addProject({
     project_name: 'Nova Heights',
-    img: '/bg/11.avif',
+    img: '/mockups/mockupHotel.avif',
     type: 'Real Site',
     link: 'https://noma-skincare.vercel.app/',
     gitHub:'',
@@ -121,7 +121,7 @@ createProject.addProject({
 
 createProject.addProject({
     project_name: 'Royal Villas',
-    img: '/bg/12.avif',
+    img: '/mockups/mockupBlog.avif',
     type: 'Showcase',
     link: 'https://salt-light-blog.vercel.app/',
     gitHub:'',
@@ -129,7 +129,7 @@ createProject.addProject({
 
 createProject.addProject({
     project_name: 'Royal Villas',
-    img: '/bg/13.avif',
+    img: '/mockups/mockupTorch.avif',
     type: 'Showcase',
     link: 'https://salt-light-blog.vercel.app/',
     gitHub:'',
@@ -137,15 +137,7 @@ createProject.addProject({
 
 createProject.addProject({
     project_name: 'Royal Villas',
-    img: '/bg/14.avif',
-    type: 'Showcase',
-    link: 'https://salt-light-blog.vercel.app/',
-    gitHub:'',
-})
-
-createProject.addProject({
-    project_name: 'Royal Villas',
-    img: '/15.webp',
+    img: '/mockups/mockupNOMA.avif',
     type: 'Showcase',
     link: 'https://salt-light-blog.vercel.app/',
     gitHub:'',
