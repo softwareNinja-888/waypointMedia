@@ -112,18 +112,18 @@ export const information = [
 
 // ADDING PROJECTS
 createProject.addProject({
-    project_name: 'Nova Heights',
-    img: '/mockups/mockupHotel.avif',
-    type: 'Real Site',
-    link: 'https://noma-skincare.vercel.app/',
+    project_name: 'Anton & Lily',
+    img: '/mockups/mockupAnton.avif',
+    type: 'Showcase',
+    link: 'https://anton-lily.vercel.app/',
     gitHub:'',
 })
 
 createProject.addProject({
-    project_name: 'Royal Villas',
-    img: '/mockups/mockupBlog.avif',
-    type: 'Showcase',
-    link: 'https://salt-light-blog.vercel.app/',
+    project_name: 'Nova Heights',
+    img: '/mockups/mockupHotel.avif',
+    type: 'Real Site',
+    link: 'https://noma-skincare.vercel.app/',
     gitHub:'',
 })
 

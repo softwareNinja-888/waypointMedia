@@ -8,8 +8,6 @@ import { GoDotFill } from "react-icons/go";
 
 function  PortfolioCard({
   id,
-  showCard,
-  underConstruction=false
 }) {
 
   const project  = createProject.getProjectById(id)
@@ -28,17 +26,9 @@ function  PortfolioCard({
 }
 
 export function PortfolioPage(){
-      const [showCard, setShowCard] = useState("all");
-    
-      const handleProject = (type) => {
-        setShowCard(type);
-      };
 
+    const Projects = information[1].projects  
 
-    const Projects = information[1].projects
-    const types = ['All',...new  Set(Projects.map(item => item.type))];
-    const numberOfProjectsCompleted = 3;
-    
       return (
         <>
           <section className="pt-20 pb-12 lg:pt-[20px] lg:pb-[90px] overflow-hidden bg-center bg-cover bg-no-repeat py-40" style={{backgroundImage:"url('/bg/shape2.avif')"}}>
@@ -64,7 +54,6 @@ export function PortfolioPage(){
                       key={index} 
                       />
                     )
-
                   })}
               </div>
           </section>
