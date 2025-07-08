@@ -1,5 +1,5 @@
 import { useContent } from "@/context/ContentContext";
-import { NavLink } from "react-router";
+import { Link } from '@tanstack/react-router'
 import { ContactPageForm } from "./ContactPageForm";
 import {AiFillStar} from 'react-icons/ai'
 

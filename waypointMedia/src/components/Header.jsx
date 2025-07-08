@@ -2,7 +2,7 @@ import { Logo } from './helper/Logo'
 import { Btn } from './helper/Btn'
 import { MobileMenu } from './helper/MobileMenu'
 import { AnimatedWord } from './helper/AnimatedWord'
-import { NavLink } from "react-router"
+import { Link } from '@tanstack/react-router'
 import { IoMenuSharp } from "react-icons/io5"
 import { useState } from 'react'
 
@@ -26,10 +26,11 @@ export function Header({content}){
             {/* NAV LINKS */}
             <nav className="hidden md:flex md:space-x-10 lg:space-x-18 text-sm ">        
                 {content.links.map((link,index)=>{
+                    console.log('Header:',link)
                     return (
-                        <NavLink to={ link === 'Home' ? '/' : link.toLowerCase()} key={index} className={` flex gap-1.5 no-underline relative cursor-pointer text-black `}>
-                            <AnimatedWord word={link} textColor='text-black' font='font-Roboto' textSize="text-md"/>
-                        </NavLink>
+                        <Link to={link.href.toLowerCase()} key={index} className={` flex gap-1.5 no-underline relative cursor-pointer text-black `}>
+                            <AnimatedWord word={link.name} textColor='text-black' font='font-Roboto' textSize="text-md"/>
+                        </Link>
                     )
                 })}
             </nav> 

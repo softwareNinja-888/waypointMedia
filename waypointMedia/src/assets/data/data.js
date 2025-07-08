@@ -74,7 +74,11 @@ const companyName = 'BluePeak Media'
 // YOU CAN EDIT THIS INFORMATION TO MANIPULATE DATA IN COMPONENTS BELOW
 export const content = Information.createBasicInfo(
 companyName,
-["Our Story","Portfolio","Pricing","Contact",],
+[
+    {name:"Our Story",href:"about"},
+    {name:"Portfolio",href:"portfolio"},
+    {name:"Contact",href:"contact"},
+],
 '/logo3.svg'
 ) 
 

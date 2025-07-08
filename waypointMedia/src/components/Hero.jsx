@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { Link } from '@tanstack/react-router'
 import { Btn } from "./helper/Btn";
 import { motion } from "framer-motion";
 
@@ -92,18 +92,18 @@ export function Hero({content}) {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.98 }}
                     >
-                        <NavLink to='/portfolio' className="mx-auto block w-fit ">
+                        <Link to='/portfolio' className="mx-auto block w-fit ">
                             <Btn text="See Projects" bg="bg-mainGreen border-none" textColor="text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Inter" width='w-30 h-10 md:h-11 md:w-46'/>
-                        </NavLink>
+                        </Link>
                     </motion.div>
                     <motion.div
                         variants={itemVariants}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.98 }}
                     >
-                        <NavLink to='/contact' className="mx-auto block w-fit ">
+                        <Link to='/contact' className="mx-auto block w-fit ">
                             <Btn text="Schedule Call" bg="bg-mainGreen border-none" textColor="text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Inter" width='w-30 h-10 md:h-11 md:w-46'/>
-                        </NavLink>
+                        </Link>
                     </motion.div>
                 </div>
             </motion.div>

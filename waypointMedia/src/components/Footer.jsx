@@ -1,5 +1,5 @@
 import { Btn } from './helper/Btn'
-import { NavLink } from 'react-router'
+import { Link } from '@tanstack/react-router'
 
 function SocialIcons({path,socialLink}){
     return (
@@ -18,9 +18,9 @@ function LinkFooter({name='About',href='/about'}){
     return (
         <>
             <li>
-                <NavLink to={href} className="flex text-sm text-black font-Poppins transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> 
+                <Link to={href} className="flex text-sm text-black font-Poppins transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> 
                     {name}
-                </NavLink>
+                </Link>
             </li>
         </>
         )
@@ -86,9 +86,9 @@ export function Footer({content}){
                 </div>
 
                 {/* CTA */}
-                <NavLink to='/contact' className="mx-auto">
+                <Link to='/contact' className="mx-auto">
                     <Btn text="Get Free Consultation" bg="bg-mainGreen border-none" textColor="text-black trasition-all duration-500 hover:rounded-xl " font="font-Poppins " width='w-60' />
-                </NavLink>
+                </Link>
             </div>
 
             {/* FOOTER INFO*/}
@@ -97,9 +97,9 @@ export function Footer({content}){
                 <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                     <div className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
                         <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
-                            <NavLink to='/' className=''>
+                            <Link to='/' className=''>
                                 <img src={content.logoImg} alt="logo" className="w-16 h-16" />
-                            </NavLink>
+                            </Link>
                             <p className="text-base leading-relaxed text-black mt-7 font-Poppins">Socials made simple, strategy made smart. We help businesses create scroll-stopping content that builds brand love, trust, and conversions—start today.</p>
 
                             <ul className="flex items-center space-x-3 mt-9">

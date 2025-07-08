@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {FaArrowRight} from 'react-icons/fa6'
-import { NavLink } from 'react-router'
+import { Link } from '@tanstack/react-router'
+
 export function StickyBar({promo='Start Growing with WayPoint Today!'}) {
   
   const [open,setOpen] = useState(true)
@@ -11,7 +12,7 @@ export function StickyBar({promo='Start Growing with WayPoint Today!'}) {
       <div className="relative pr-6">
         <div className="flex flex-wrap items-center justify-center gap-5 text-center">
           <div className="inline-flex text-xs md:text-sm font-playfairBold  text-black  uppercase font-Roboto">
-            {promo} <NavLink to="/contact" className='ml-1 underline'>Get started</NavLink>
+            {promo} <Link to="/contact" className='ml-1 underline'>Get started</Link>
           </div>
         </div>
         <button className="absolute right-0 top-1/2 flex h-6 w-6 -translate-y-1/2 items-center justify-center text-black/50 duration-200 hover:text-black cursor-pointer" onClick={()=>{

@@ -1,13 +1,13 @@
-import { Outlet } from "react-router"
+import { Outlet, useLocation } from "@tanstack/react-router"
 import { Header } from "./Header"
 import { Hero } from "./Hero"
 import { StickyBar } from './helper/StickyBar'
 import { Footer } from "./Footer"
-import { useLocation } from "react-router-dom";
 
 export function Layout({content}){
-	const location = useLocation();
-
+	
+	const location = useLocation()
+	
 	return (
 		<>
 			<div>

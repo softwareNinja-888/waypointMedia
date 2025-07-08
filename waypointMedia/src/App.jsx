@@ -1,42 +1,81 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { Home } from "./components/Home"
+// COMPONENTS
+import { PortfolioPage } from './components/Portfolio/PortfolioPage'
+import { ContactPage } from './components/Contact/ContactPage'
+import { AboutPage } from './components/About/AboutPage'
+import { Layout } from './components/Layout.jsx'
+import { useContent, ContentProvider } from "@/context/ContentContext";
+// import { Socials } from './components/helper/Socials'
+import { PageScrollToTop } from './components/helper/PageScrollToTop.jsx'
+// LAYOUT 
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import {
+  RouterProvider,
+  createRoute,
+  createRootRoute,
+  createRouter,
+  Outlet,
+} from '@tanstack/react-router';
 
-import { Header } from "./components/Header"
-import { Hero } from "./components/Hero"
-import { SocialProof } from "./components/SocialProof"
-import { GrowthChart } from "./components/GrowthChart"
-import { Footer } from "./components/Footer"
+const queryClient = new QueryClient();
 
-
-import { ClientDisplay } from './components/helper/ClientDisplay'
-import { StickyBar } from './components/helper/StickyBar'
-import { Services } from './components/Services'
-
-// import { content } from "@/assets/data/data"
-import { useContent } from "@/context/ContentContext";
-// import { PricingHome } from './components/PricingHome'
-import { How } from './components/How'
-import { About } from './components/About'
-import { WhyUs } from './components/WhyUs'
-import { Projects } from './components/Projects'
-
-function App() {
-  
-  const content = useContent()
-
+// Create a wrapper component for the root route
+const RootComponent = () => {
+  const content = useContent();
   return (
     <>
-      <div className="bg-center bg-cover bg-no-repeat py-30" style={{backgroundImage:"url('/bg/shape2.avif')"}}>
-        <Services content={content}/>
-        <How/>
-        <Projects/>
-        <About content={content}/>
-        <WhyUs content={content}/>
-        <GrowthChart/>
-      </div>
+      <PageScrollToTop/>
+      <Layout content={content} />
     </>
+  );
+};
+
+const rootRoute = createRootRoute({
+  component: RootComponent,
+});
+
+const portfolioRoute = createRoute({
+  path: '/portfolio',
+  getParentRoute: () => rootRoute,
+  component: PortfolioPage,
+});
+
+const contactRoute = createRoute({
+  path: '/contact',
+  getParentRoute: () => rootRoute,
+  component: ContactPage,
+});
+
+const aboutUsRoute = createRoute({
+  path: '/about',
+  getParentRoute: () => rootRoute,
+  component: AboutPage,
+});
+
+const homeRoute = createRoute({
+  path: '/',
+  getParentRoute: () => rootRoute,
+  component: Home,
+});
+
+const routeTree = rootRoute.addChildren([
+  homeRoute,
+  portfolioRoute,
+  contactRoute,
+  aboutUsRoute,
+]);
+
+const router = createRouter({ routeTree });
+
+function App() {
+  return (
+    <ContentProvider>
+      <QueryClientProvider client={queryClient}>
+        <RouterProvider router={router} />
+      </QueryClientProvider>
+    </ContentProvider>
   )
 }
 

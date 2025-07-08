@@ -1,9 +1,3 @@
-import { Logo } from './helper/Logo'
-import { Btn } from './helper/Btn'
-import { AnimatedWord } from './helper/AnimatedWord'
-import { NavLink } from "react-router"
-
-
 function LineHori({size='w-10',border='border-1 border-darkGreen',direction="rotate-90"}){
     return (
         <>

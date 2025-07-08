@@ -11,7 +11,7 @@ import { useState } from "react"
 
 
 // NAVIGATION
-import { NavLink } from "react-router"
+import { Link } from '@tanstack/react-router'
 
 // FOR ID
 import { v4 as uuidv4 } from 'uuid';
@@ -103,9 +103,9 @@ function PricingCard({priceInfo,timeFrame}){
 								{priceInfo.price === 'Custom' ? 'Custom' : formatCurrency('R',discountedPrice)}
 							</>
 						)}</div>
-						<NavLink to='/contact' className="mx-auto block w-12/12 ">
+						<Link to='/contact' className="mx-auto block w-12/12 ">
 							<Btn text="Schedule Call" bg="bg-mainGreen border-none" textColor="text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Roboto" width='h-11 w-full'/>
-						</NavLink>
+						</Link>
 						<div className="flex flex-col gap-4 h-90 py-6">
 							{priceInfo.children.map(child=>{
 								return (

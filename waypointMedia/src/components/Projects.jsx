@@ -1,7 +1,8 @@
 import { IoIosArrowForward } from "react-icons/io";
 import { MdLinearScale } from 'react-icons/md'
 
-import { NavLink } from "react-router";
+import { Link } from '@tanstack/react-router'
+
 import { information,createProject } from "../assets/data/data";
 import { motion,useInView } from "framer-motion";
 import { useRef } from "react";
@@ -9,10 +10,10 @@ import { useRef } from "react";
 function LearnMore({title='Learn More',href='services'}){
     return (
         <>
-            <NavLink to={href} id="learn_more" className="flex gap-2 border border-white bg-white w-10/12 justify-center items-center py-3 opacity-0 group-hover:opacity-100 scale-100 group-hover:scale-100 transition-all duration-500 ease-in-out hover:bg-gray-200" >
+            <Link to={href} id="learn_more" className="flex gap-2 border border-white bg-white w-10/12 justify-center items-center py-3 opacity-0 group-hover:opacity-100 scale-100 group-hover:scale-100 transition-all duration-500 ease-in-out hover:bg-gray-200" >
                 <span className="text-lg font-inter700 text-black">{title}</span>
                 <IoIosArrowForward className=" transform -rotate-40 text-black"  size={24}/>
-            </NavLink>
+            </Link>
         </>
     )
 }
@@ -22,7 +23,7 @@ function ProjectCard({id=0,name='Project Title',img='/0.webp',type="Landing page
 
         return (
             <>
-                <NavLink to={project.link} target='_blank' className={`flex flex-col gap-5 ${gridRows} ${gridColomns} `}>
+                <Link to={project.link} target='_blank' className={`flex flex-col gap-5 ${gridRows} ${gridColomns} `}>
                         <div className="">
                             <img src={project.img} alt={`${project.project_name} mockup`} className="cursor-pointer h-70 md:h-70 lg:h-100" />
                         </div>
@@ -30,7 +31,7 @@ function ProjectCard({id=0,name='Project Title',img='/0.webp',type="Landing page
                             <div className="flex items-center gap-2"><MdLinearScale className=''/>{project.type}</div>
                             <div className="font-Cal_Sans text-2xl text-black">{project.project_name}</div>
                         </div>
-                </NavLink>
+                </Link>
             </>
         )
 }
@@ -59,14 +60,14 @@ export function Projects() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati suscipit porro asperiores numquam magnam enim voluptatibus, a explicabo. Aliquid mollitia obcaecati deleniti nisi natus temporibus ducimus odit officia pariatur quasi.
                 </div>
                 <motion.div>
-                    <NavLink 
+                    <Link 
                         to='/portfolio' 
                         id="learn_more" 
                         className="group flex gap-2 bg-mainGreen w-6/12 justify-center items-center py-3 transition-all duration-500 ease-in-out  text-black hover:scale-103 hover:rounded-sm"
                     >
                         <span className="text-lg font-Roboto ">See Projects</span>
                         <IoIosArrowForward  size={16}  className="group-hover:text-white transition-all duration-600"/>
-                    </NavLink>
+                    </Link>
                 </motion.div>
             </motion.div>
 
