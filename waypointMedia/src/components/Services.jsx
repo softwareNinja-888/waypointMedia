@@ -56,16 +56,13 @@ export function Services({content}) {
     const AboutSections = [
         {id:0, icon:<FaBook/>, title:'Social Media Management', description:'We don’t just boost engagement—we design campaigns that fill rooms and increase direct reservations.'},
         {id:1, icon:<MdVisibility/>, title:'Content Creation (Photography + Video)', description:'Stay top of mind. We position your brand where it matters—on the feeds and screens of your ideal guests.'},
-        {id:2, icon:<MdHotel/>, title:'Influencer Collaborations', description:'Turn likes into loyalty. We create meaningful content that builds real connections with your audience.'},
-        {id:3, icon:<PiStrategyBold/>, title:'Paid Advertising Campaigns', description:'No templates. Just tailored social media plans built around your property’s goals and target market.'},
-        {id:4, icon:<FaChartLine/>, title:'Reputation Management', description:'See what’s working—instantly. Get custom analytics and reports that show exactly where your growth is coming from.'}
+        {id:2, icon:<MdHotel/>, title:'Influencer Collaborations', description:'Turn likes into loyalty. We create meaningful content that builds real connections with your audience.'}
     ];
 
     return (
         <>
-            <Waves waveColor='bg-darkGray'  bgColor='#F8F7F5' inverse={false}/>
-            <div className="bg-darkGray">
-                <div className="flex justify-center gap-2 text-5xl text-white text-center font-Cal_Sans uppercase">
+            <div  style={{backgroundImage:"url('/bg/shape2.avif')"}}>
+                <div className="flex justify-center gap-2 text-5xl text-black text-center font-Cal_Sans uppercase">
                     Our Services
                   </div>             
                 <div className="flex text-white h-fit px-6 gap-10 py-40 ">                  
@@ -137,7 +134,7 @@ export function Services({content}) {
 
                 {/* Right Section - Image with Animation */}
                 <div className='flex flex-col  gap-6 flex-1'>
-                      <div className="text-5xl font-Cal_Sans uppercase ">Marketing promises are everywhere. We deliver bookings.</div>
+                      <div className="text-5xl font-Cal_Sans uppercase text-black">Marketing promises are everywhere. We deliver results.</div>
 
                        <div className="flex flex-col gap-6 mt-5">
                         {AboutSections.map((el) => (

@@ -3,7 +3,8 @@ import { MdLinearScale } from 'react-icons/md'
 
 import { NavLink } from "react-router";
 import { information,createProject } from "../assets/data/data";
-import { motion } from "framer-motion";
+import { motion,useInView } from "framer-motion";
+import { useRef } from "react";
 
 function LearnMore({title='Learn More',href='services'}){
     return (
@@ -15,6 +16,7 @@ function LearnMore({title='Learn More',href='services'}){
         </>
     )
 }
+
 function ProjectCard({id=0,name='Project Title',img='/0.webp',type="Landing page",gridRows='row-span-5',gridColomns=''}){
         const project  = createProject.getProjectById(id)
 
@@ -22,7 +24,7 @@ function ProjectCard({id=0,name='Project Title',img='/0.webp',type="Landing page
             <>
                 <NavLink to={project.link} target='_blank' className={`flex flex-col gap-5 ${gridRows} ${gridColomns} `}>
                         <div className="">
-                            <img src={project.img} alt={`${project.project_name} mockup`} className="cursor-pointer" />
+                            <img src={project.img} alt={`${project.project_name} mockup`} className="cursor-pointer h-70 md:h-70 lg:h-100" />
                         </div>
                         <div className="px-5 text-blue-600">
                             <div className="flex items-center gap-2"><MdLinearScale className=''/>{project.type}</div>
@@ -42,7 +44,7 @@ export function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="grid md:grid-cols-2 grid-rows-[repeat(auto)] md:grid-rows-[100px_repeat(10,80px)] px-6 gap-y-6 gap-x-8 py-50 bg-center bg-cover bg-no-repeat" style={{backgroundImage:"url('/bg/shape2.avif')"}}
+            className="grid md:grid-cols-2 grid-rows-[repeat(auto)] md:grid-rows-[100px_repeat(10,80px)] px-6 gap-y-18 md:gap-y-10 md:gap-x-10 lg:gap-x-28  py-50 bg-center bg-cover bg-no-repeat" style={{backgroundImage:"url('/bg/shape2.avif')"}}
         >
             {/* Animated heading section */}
             <motion.div 
@@ -52,7 +54,6 @@ export function Projects() {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="flex flex-col gap-6 text-black row-span-3 px-5"
             >
-                <div className="text-xl font-Cal_Sans text-blue-600">Portfolio</div>
                 <div className="text-3xl font-Cal_Sans">Check out our popular projects</div>
                 <div className="font-Roboto">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati suscipit porro asperiores numquam magnam enim voluptatibus, a explicabo. Aliquid mollitia obcaecati deleniti nisi natus temporibus ducimus odit officia pariatur quasi.

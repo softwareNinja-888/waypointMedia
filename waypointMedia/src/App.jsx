@@ -16,10 +16,9 @@ import { Services } from './components/Services'
 
 // import { content } from "@/assets/data/data"
 import { useContent } from "@/context/ContentContext";
-import { PricingHome } from './components/PricingHome'
+// import { PricingHome } from './components/PricingHome'
 import { How } from './components/How'
 import { About } from './components/About'
-import { Gallery } from './components/Gallery'
 import { WhyUs } from './components/WhyUs'
 import { Projects } from './components/Projects'
 
@@ -29,20 +28,14 @@ function App() {
 
   return (
     <>
-      <div className="bg-center bg-cover bg-no-repeat py-40" style={{backgroundImage:"url('/bg/shape2.avif')"}}>
+      <div className="bg-center bg-cover bg-no-repeat py-30" style={{backgroundImage:"url('/bg/shape2.avif')"}}>
+        <Services content={content}/>
+        <How/>
+        <Projects/>
         <About content={content}/>
-        <div className="flex md:flex-row flex-col md:items-end justify-center ">
-          <SocialProof/>
-          <ClientDisplay/>
-        </div>
+        <WhyUs content={content}/>
         <GrowthChart/>
       </div>
-      <Services content={content}/>
-      <WhyUs content={content}/>
-      <Gallery/>
-      <Projects/>
-      <PricingHome/>
-      <How/>
     </>
   )
 }
