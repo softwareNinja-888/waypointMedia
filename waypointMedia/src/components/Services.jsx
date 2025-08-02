@@ -5,12 +5,12 @@ import { Waves } from './helper/Waves';
 
 
 // ICONS
+import { FaCode,FaPhotoVideo } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
 import { FaChartLine } from "react-icons/fa6";
 import { MdVisibility } from "react-icons/md";
 import { MdHotel } from "react-icons/md";
 import { PiStrategyBold } from "react-icons/pi";
-import { FaBook } from "react-icons/fa";
 
 function ElText({title='Enter Title', description="Enter Description", activeNum, activeTab, setActiveTab,icon}) {
     return (
@@ -53,10 +53,11 @@ function ElText({title='Enter Title', description="Enter Description", activeNum
 export function Services({content}) {
     const [activeTab, setActiveTab] = useState(0);
 
-    const AboutSections = [
-        {id:0, icon:<FaBook/>, title:'Social Media Management', description:'We don’t just boost engagement—we design campaigns that fill rooms and increase direct reservations.'},
-        {id:1, icon:<MdVisibility/>, title:'Content Creation (Photography + Video)', description:'Stay top of mind. We position your brand where it matters—on the feeds and screens of your ideal guests.'},
-        {id:2, icon:<MdHotel/>, title:'Influencer Collaborations', description:'Turn likes into loyalty. We create meaningful content that builds real connections with your audience.'}
+    const ServiceSections = [
+         {id: 0, icon: <FaCode/>, title: 'Website Development', description: 'We build fast, responsive websites that turn visitors into customers and reflect your brand at every click.'},
+        {id: 1, icon: <MdVisibility/>, title: 'SEO Optimization', description: 'Be found first. We help your business climb search rankings so your ideal customers find you without the guesswork.'},
+        {id: 2, icon: <FaPhotoVideo/>, title: 'Content Creation (Photography + Video)', description: 'Tell your story with visuals that stick. We shoot sharp, scroll-stopping content your audience won’t forget.'}
+
     ];
 
     return (
@@ -74,7 +75,7 @@ export function Services({content}) {
                         <motion.img
                           key="image0"
                           alt="picture"
-                          src="/0.webp"
+                          src="/mockups/mockupMobile.png"
                           className="rounded-4xl object-cover w-full h-[660px]"
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
@@ -86,7 +87,7 @@ export function Services({content}) {
                         <motion.img
                           key="image1"
                           alt="picture"
-                          src="/1.webp"
+                          src="/seo1.avif"
                           className="rounded-4xl object-cover object-top w-full h-[660px]"
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
@@ -98,7 +99,7 @@ export function Services({content}) {
                         <motion.img
                           key="image2"
                           alt="picture"
-                          src="/3.webp"
+                          src="/photo.avif"
                           className="rounded-4xl object-cover w-full h-[660px]"
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
@@ -134,10 +135,10 @@ export function Services({content}) {
 
                 {/* Right Section - Image with Animation */}
                 <div className='flex flex-col  gap-6 flex-1'>
-                      <div className="text-5xl font-Cal_Sans uppercase text-black">Marketing promises are everywhere. We deliver results.</div>
+                      <div className="text-5xl font-Cal_Sans uppercase text-black">No Hype. Just High Performing Websites.</div>
 
                        <div className="flex flex-col gap-6 mt-5">
-                        {AboutSections.map((el) => (
+                        {ServiceSections.map((el) => (
                             <ElText
                               key={el.id}
                               title={el.title}
