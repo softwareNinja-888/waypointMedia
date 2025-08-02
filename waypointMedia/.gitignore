@@ -1,3 +1,5 @@
+.env
+todo.txt
 # Logs
 logs
 *.log

@@ -166,13 +166,13 @@ export function AboutPage(){
 					</div>
 				</div>
 				<div className="w-10/12 mx-auto">
-					<SectionIntro description="Meet our amazing team behind our excellence"/>
+					{/*<SectionIntro description="Meet our amazing team behind our excellence"/>
 					<div className="grid grid-cols-1 md:grid-cols-2 mt-10 gap-y-20 gap-x-10">
 						<EmployeeCard name='Ethan Carter' position="Social Media Marketer" img="/13.webp"/>
 						<EmployeeCard name='Bayanda Dlamini' position="Web Developer" img="/12.webp"/>
 						<EmployeeCard name='Bayanda Dlamini' position="Web Developer" img="/about/a5.avif"/>
 						<EmployeeCard name='Bayanda Dlamini' position="Web Developer" img="/about/a4.avif"/>
-					</div>
+					</div>*/}
 					<div className="grid grid-cols-2 gap-3 flex-1/2 font-Poppins mt-10" ref={statsRef}>
 
 						{/* IMCREMENTING STATS */}
