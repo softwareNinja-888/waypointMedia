@@ -27,9 +27,9 @@ function ProjectCard({id=0,name='Project Title',img='/0.webp',type="Landing page
                         <div className="">
                             <img src={project.img} alt={`${project.project_name} mockup`} className="cursor-pointer h-70 md:h-70 lg:h-100" />
                         </div>
-                        <div className="px-5 text-blue-600">
-                            <div className="flex items-center gap-2"><MdLinearScale className=''/>{project.type}</div>
+                        <div className="flex flex-col gap-2 px-2 text-black">
                             <div className="font-Cal_Sans text-2xl text-black">{project.project_name}</div>
+                            <div className="flex items-center gap-2 font-Roboto">{project.description}</div>
                         </div>
                 </Link>
             </>
@@ -55,9 +55,9 @@ export function Projects() {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="flex flex-col gap-6 text-black row-span-3 px-5"
             >
-                <div className="text-3xl font-Cal_Sans">Check out our popular projects</div>
+                <div className="text-3xl font-Cal_Sans">Our Work in Action</div>
                 <div className="font-Roboto">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati suscipit porro asperiores numquam magnam enim voluptatibus, a explicabo. Aliquid mollitia obcaecati deleniti nisi natus temporibus ducimus odit officia pariatur quasi.
+                    Browse through our latest projects for a glimpse of what’s possible. Your business’s digital presence could be next in line for a bold transformation
                 </div>
                 <motion.div>
                     <Link 

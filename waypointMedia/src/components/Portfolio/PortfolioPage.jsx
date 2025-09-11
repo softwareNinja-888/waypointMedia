@@ -26,9 +26,7 @@ function PortfolioCard({ id }) {
     >
       <div className="font-Cal_Sans text-2xl">{project.project_name}</div>
       <div className="font-Roboto text-gray-700 text-sm">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fugiat
-        voluptatum cupiditate pariatur minima optio expedita laudantium dolor
-        voluptatem.
+        {project.description}
       </div>
       <div>
         <img

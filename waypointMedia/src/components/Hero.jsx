@@ -102,7 +102,7 @@ export function Hero({content}) {
                         whileTap={{ scale: 0.98 }}
                     >
                         <Link to='/contact' className="mx-auto block w-fit ">
-                            <Btn text="Schedule Call" bg="bg-mainGreen border-none" textColor="text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Inter" width='w-30 h-10 md:h-11 md:w-46'/>
+                            <Btn text="Our Services" bg="bg-mainGreen border-none" textColor="text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Inter" width='w-30 h-10 md:h-11 md:w-46'/>
                         </Link>
                     </motion.div>
                 </div>

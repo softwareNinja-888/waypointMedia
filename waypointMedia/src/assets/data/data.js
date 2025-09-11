@@ -119,33 +119,37 @@ createProject.addProject({
     project_name: 'Anton & Lily',
     img: '/mockups/mockupAnton.avif',
     type: 'Showcase',
+    description: 'This is a fictional hotel to showcase the type of landing page we can provide. We are however not limited to these type of products',
     link: 'https://anton-lily.vercel.app/',
     gitHub:'',
 })
 
 createProject.addProject({
-    project_name: 'Nova Heights',
+    project_name: 'Goggas Nest',
     img: '/mockups/mockupHotel.avif',
     type: 'Real Site',
+    description: 'This is a fictional hotel to showcase the type of landing page we can provide. We are however not limited to these type of products',
     link: 'https://noma-skincare.vercel.app/',
     gitHub:'',
 })
 
-createProject.addProject({
-    project_name: 'Royal Villas',
-    img: '/mockups/mockupTorch.avif',
-    type: 'Showcase',
-    link: 'https://salt-light-blog.vercel.app/',
-    gitHub:'',
-})
+// createProject.addProject({
+//     project_name: 'Royal Villas',
+//     img: '/mockups/mockupTorch.avif',
+//     type: 'Showcase',
+//     description: 'This is a fictional hotel to showcase the type of landing page we can provide. We are however not limited to these type of products',
+//     link: 'https://salt-light-blog.vercel.app/',
+//     gitHub:'',
+// })
 
-createProject.addProject({
-    project_name: 'Royal Villas',
-    img: '/mockups/mockupNOMA.avif',
-    type: 'Showcase',
-    link: 'https://salt-light-blog.vercel.app/',
-    gitHub:'',
-})
+// createProject.addProject({
+//     project_name: 'Royal Villas',
+//     img: '/mockups/mockupNOMA.avif',
+//     type: 'Showcase',
+//     description: 'This is a fictional hotel to showcase the type of landing page we can provide. We are however not limited to these type of products',
+//     link: 'https://salt-light-blog.vercel.app/',
+//     gitHub:'',
+// })
 
 // ADING PRICING 
 createPricing.addPrice({
