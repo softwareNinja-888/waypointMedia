@@ -15,7 +15,7 @@ import { PiStrategyBold } from "react-icons/pi";
 function ElText({title='Enter Title', description="Enter Description", activeNum, activeTab, setActiveTab,icon}) {
     return (
         <>
-            <motion.div 
+            <motion.div
                 className="flex flex-col gap-0 px-6 py-3 cursor-pointer border border-white bg-white rounded-xl text-black" 
                 onClick={() => setActiveTab(activeNum)}
                 whileHover={{ scale: 1.02 }}
@@ -62,7 +62,7 @@ export function Services({content}) {
 
     return (
         <>
-            <div  style={{backgroundImage:"url('/bg/shape2.avif')"}}>
+            <div id="services" style={{backgroundImage:"url('/bg/shape2.avif')"}}>
                 <div className="flex justify-center gap-2 text-5xl text-black text-center font-Cal_Sans uppercase">
                     Our Services
                   </div>             

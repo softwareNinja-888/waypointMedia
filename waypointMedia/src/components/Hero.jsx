@@ -68,22 +68,20 @@ export function Hero({content}) {
 
 
                 <motion.div 
-                    className="text-xl md:text-4xl font-Cal_Sans text-center"
+                    className="text-xl md:text-4xl font-Cal_Sans text-center mt-4"
                     variants={itemVariants}
                 > 
                     Enter the new age of digital innovation
                 </motion.div>
 
                 <motion.div 
-                    className="font-Roboto text-center w-12/12 md:w-12/12 mx-auto text-md md:text-md"                        
+                    className="font-Roboto text-center w-12/12 md:w-11/12 mx-auto text-md md:text-md md:my-1"                        
                     variants={itemVariants}
                 >
 
                     {/* Subtext */}
                     
-                    Reimagine your digital presence with {content.name} — a forward-thinking tourism marketing agency where cutting-edge technology, creative strategy, and visual storytelling come together to elevate your brand, captivate your audience, and drive real-world results.
-
-
+                   Reimagine your digital presence with {content.name}, a forward-thinking agency blending technology, strategy, and storytelling to elevate your brand and drive results.
                 </motion.div>
 
                 <div className="flex flex-row justify-center gap-3">
@@ -93,7 +91,7 @@ export function Hero({content}) {
                         whileTap={{ scale: 0.98 }}
                     >
                         <Link to='/portfolio' className="mx-auto block w-fit ">
-                            <Btn text="See Projects" bg="bg-mainGreen border-none" textColor="text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Inter" width='w-30 h-10 md:h-11 md:w-46'/>
+                            <Btn text="See Projects" bg="bg-mainGreen border-none" textColor="text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Roboto" width='w-30 h-10 md:h-10 md:w-40'/>
                         </Link>
                     </motion.div>
                     <motion.div
@@ -101,9 +99,15 @@ export function Hero({content}) {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.98 }}
                     >
-                        <Link to='/contact' className="mx-auto block w-fit ">
-                            <Btn text="Our Services" bg="bg-mainGreen border-none" textColor="text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Inter" width='w-30 h-10 md:h-11 md:w-46'/>
-                        </Link>
+                       <a href="#services" className="mx-auto block w-fit">
+                          <Btn 
+                            text="Our Services" 
+                            bg="bg-mainGreen border-none" 
+                            textColor="text-black text-sm transition-all duration-500 hover:rounded-xl hover:scale-103" 
+                            font="font-Roboto" 
+                            width="w-30 h-10 md:h-10 md:w-40"
+                          />
+                        </a>
                     </motion.div>
                 </div>
             </motion.div>

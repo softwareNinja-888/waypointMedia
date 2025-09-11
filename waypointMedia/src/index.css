@@ -54,11 +54,13 @@
 
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body{
   background-color: #F8F7F5;
 }
-
 
 @keyframes marquee {
   0% {transform:translateX(0%);}
