@@ -2,6 +2,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { MdLinearScale } from 'react-icons/md'
 
 import { Link } from '@tanstack/react-router'
+import { Btn } from './helper/Btn'
 
 import { information,createProject } from "../assets/data/data";
 import { motion,useInView } from "framer-motion";
@@ -60,14 +61,18 @@ export function Projects() {
                     Browse through our latest projects for a glimpse of what’s possible. Your business’s digital presence could be next in line for a bold transformation
                 </div>
                 <motion.div>
-                    <Link 
+                  <Link to='/portfolio' className=" ">
+                    <Btn text="See Projects" bg="bg-mainGreen border-none" textColor="hidden md:flex text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Roboto" width='h-11 w-36'/>
+                </Link>
+               
+                    {/*<Link 
                         to='/portfolio' 
                         id="learn_more" 
                         className="group flex gap-2 bg-mainGreen w-6/12 justify-center items-center py-3 transition-all duration-500 ease-in-out  text-black hover:scale-103 hover:rounded-sm"
                     >
                         <span className="text-lg font-Roboto ">See Projects</span>
                         <IoIosArrowForward  size={16}  className="group-hover:text-white transition-all duration-600"/>
-                    </Link>
+                    </Link>*/}
                 </motion.div>
             </motion.div>
 

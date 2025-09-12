@@ -56,7 +56,10 @@ export function Services({content}) {
     const ServiceSections = [
          {id: 0, icon: <FaCode/>, title: 'Website Development', description: 'We build fast, responsive websites that turn visitors into customers and reflect your brand at every click.'},
         {id: 1, icon: <MdVisibility/>, title: 'SEO Optimization', description: 'Be found first. We help your business climb search rankings so your ideal customers find you without the guesswork.'},
-        {id: 2, icon: <FaPhotoVideo/>, title: 'Content Creation (Photography + Video)', description: 'Tell your story with visuals that stick. We shoot sharp, scroll-stopping content your audience won’t forget.'}
+        {id: 2, icon: <FaPhotoVideo/>, title: 'Online Payments', description: 'Unlock a new source of revenue for your business.'},
+        {id: 3, icon: <FaPhotoVideo/>, title: 'Content Creation (Photography + Video)', description: 'Tell your story with visuals that stick. We shoot sharp, scroll-stopping content your audience won’t forget.'},
+
+
 
     ];
 
@@ -75,8 +78,8 @@ export function Services({content}) {
                         <motion.img
                           key="image0"
                           alt="picture"
-                          src="/mockups/mockupMobile.png"
-                          className="rounded-4xl object-cover w-full h-[660px]"
+                          src="/illus/mobileDev.svg"
+                          className="rounded-4xl object-contain w-full h-[660px]"
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
                           exit={{ opacity: 0 }}
@@ -87,8 +90,8 @@ export function Services({content}) {
                         <motion.img
                           key="image1"
                           alt="picture"
-                          src="/seo1.avif"
-                          className="rounded-4xl object-cover object-top w-full h-[660px]"
+                          src="/illus/search.svg"
+                          className="rounded-4xl object-contain object-center w-full h-[660px]"
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
                           exit={{ opacity: 0 }}
@@ -99,8 +102,8 @@ export function Services({content}) {
                         <motion.img
                           key="image2"
                           alt="picture"
-                          src="/photo.avif"
-                          className="rounded-4xl object-cover w-full h-[660px]"
+                          src="/illus/mobile.svg"
+                          className="rounded-4xl object-contain w-full h-[660px]"
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
                           exit={{ opacity: 0 }}
@@ -111,19 +114,8 @@ export function Services({content}) {
                         <motion.img
                           key="image2"
                           alt="picture"
-                          src="/4.webp"
-                          className="rounded-4xl object-cover w-full h-[660px]"
-                          initial={{ opacity: 0 }}
-                          animate={{ opacity: 1 }}
-                          exit={{ opacity: 0 }}
-                          transition={{ duration: 0.5, ease: "easeInOut" }}
-                        />
-                      )}{activeTab === 4 && (
-                        <motion.img
-                          key="image2"
-                          alt="picture"
-                          src="/6.webp"
-                          className="rounded-4xl object-cover w-full h-[660px]"
+                          src="/illus/photo2.svg"
+                          className="rounded-4xl object-contain w-full h-[660px]"
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
                           exit={{ opacity: 0 }}

@@ -126,10 +126,10 @@ createProject.addProject({
 
 createProject.addProject({
     project_name: 'Goggas Nest',
-    img: '/mockups/mockupHotel.avif',
+    img: '/mockups/mockupGogga.avif',
     type: 'Real Site',
     description: 'This is a fictional hotel to showcase the type of landing page we can provide. We are however not limited to these type of products',
-    link: 'https://noma-skincare.vercel.app/',
+    link: 'https://gogga-landing.vercel.app/',
     gitHub:'',
 })
 
