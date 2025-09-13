@@ -59,31 +59,44 @@ export function How() {
     const headerInView = useInView(headerRef, { once: true, margin: "-50px" });
 
     const processSteps = [
-        {
+          {
             num: '001',
-            name: 'Free Consultation',
-            title: 'In-Depth discovery to understand your business needs and goals',
-            description: 'We take the time to deeply analyze your vision, industry, and target audience. Our goal is to craft a strategic foundation that aligns perfectly with your objectives, ensuring a strong start to the design process'
-        },
-        {
+            name: 'Discovery & Strategy',
+            title: 'Deep dive into your business, goals, and audience',
+            description:
+              'We start with a strategy session to understand your business objectives, industry landscape, and target audience. This ensures that your website is not just visually appealing but built as a growth tool tailored to your goals.',
+          },
+          {
             num: '002',
-            name: 'Design',
-            title: 'Strategic Roadmap creation for a purposeful and impactful design',
-            description: 'We create comprehensive design strategies that align with your brand vision and business objectives, ensuring every element serves a purpose in your overall success.'
-        },
-        {
+            name: 'Content & SEO Alignment',
+            title: 'Crafting powerful messaging with search visibility in mind',
+            description:
+              'Our team develops compelling copy aligned with SEO best practices, and we collaborate with professional photographers to create visuals that capture your brand’s essence.',
+          },
+          {
             num: '003',
-            name: 'Development',
-            title: 'High-quality development bringing your vision to life',
-            description: 'Our expert developers transform designs into functional, responsive, and optimized solutions using cutting-edge technologies and best practices.'
-        },
-        {
+            name: 'Custom Design',
+            title: 'Designing a premium, user-focused experience',
+            description:
+              'We design a fully customized website layout that reflects your brand identity, engages your audience, and delivers a seamless user journey optimized for conversions.',
+          },
+          {
             num: '004',
-            name: 'Launch & Support',
-            title: 'Seamless launch with ongoing support and optimization',
-            description: 'We ensure a smooth launch process and provide continuous support to maintain peak performance and adapt to your evolving needs.'
-        }
-    ];
+            name: 'Development & Optimization',
+            title: 'Transforming designs into high-performing websites',
+            description:
+              'Our expert developers build your site with cutting-edge technologies, ensuring it is fast, responsive, secure, and optimized for performance across all devices.',
+          },
+          {
+            num: '005',
+            name: 'Launch, Support & Growth',
+            title: 'Seamless launch with ongoing optimization',
+            description:
+              'We handle a smooth launch, monitor performance, and provide ongoing support. From technical maintenance to SEO enhancements, we help your website grow with your business.',
+          },
+        ];
+
+
 
     return (
         <div className="flex flex-col gap-5 py-12 md:py-20 px-4 md:px-5 bg-center bg-cover bg-no-repeat" style={{backgroundImage:"url('/bg/shape2.avif')"}}>
@@ -111,7 +124,7 @@ export function How() {
                 animate={titleInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                 transition={{ duration: 0.8, delay: 0.2, ease: [0.21, 0.47, 0.32, 0.98] }}
             >
-                Easy and Seamless process from request to delivery
+                Easy and Seamless process from request to launch
             </motion.div>
             
             <motion.div 

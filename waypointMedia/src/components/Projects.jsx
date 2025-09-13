@@ -46,7 +46,7 @@ export function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="grid md:grid-cols-2 grid-rows-[repeat(auto)] md:grid-rows-[100px_repeat(10,80px)] px-6 gap-y-18 md:gap-y-10 md:gap-x-10 lg:gap-x-28  py-50 bg-center bg-cover bg-no-repeat" style={{backgroundImage:"url('/bg/shape2.avif')"}}
+            className="grid md:grid-cols-2 grid-rows-[repeat(auto)] md:grid-rows-[100px_repeat(5,80px)] px-6 gap-y-18 md:gap-y-10 md:gap-x-10 lg:gap-x-28  py-50 bg-center bg-cover bg-no-repeat" style={{backgroundImage:"url('/bg/shape2.avif')"}}
         >
             {/* Animated heading section */}
             <motion.div 
@@ -64,15 +64,6 @@ export function Projects() {
                   <Link to='/portfolio' className=" ">
                     <Btn text="See Projects" bg="bg-mainGreen border-none" textColor="hidden md:flex text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Roboto" width='h-11 w-36'/>
                 </Link>
-               
-                    {/*<Link 
-                        to='/portfolio' 
-                        id="learn_more" 
-                        className="group flex gap-2 bg-mainGreen w-6/12 justify-center items-center py-3 transition-all duration-500 ease-in-out  text-black hover:scale-103 hover:rounded-sm"
-                    >
-                        <span className="text-lg font-Roboto ">See Projects</span>
-                        <IoIosArrowForward  size={16}  className="group-hover:text-white transition-all duration-600"/>
-                    </Link>*/}
                 </motion.div>
             </motion.div>
 

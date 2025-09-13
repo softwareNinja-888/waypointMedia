@@ -141,7 +141,7 @@ export function Footer({content}){
 
                     <hr className="mt-16 mb-10 border-gray-200" />
 
-                    <p className="text-sm text-center text-black font-Playfair">© Copyright 2021, All Rights Reserved by {content.name}</p>
+                    <p className="text-sm text-center text-black font-Playfair">© Copyright {new Date().getFullYear()}, All Rights Reserved by {content.name}</p>
                 </div>
             </section>
        </div>

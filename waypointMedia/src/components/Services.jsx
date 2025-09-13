@@ -10,6 +10,7 @@ import { GoDotFill } from "react-icons/go";
 import { FaChartLine } from "react-icons/fa6";
 import { MdVisibility } from "react-icons/md";
 import { MdHotel } from "react-icons/md";
+import { BsCurrencyDollar } from "react-icons/bs";
 import { PiStrategyBold } from "react-icons/pi";
 
 function ElText({title='Enter Title', description="Enter Description", activeNum, activeTab, setActiveTab,icon}) {
@@ -56,7 +57,7 @@ export function Services({content}) {
     const ServiceSections = [
          {id: 0, icon: <FaCode/>, title: 'Website Development', description: 'We build fast, responsive websites that turn visitors into customers and reflect your brand at every click.'},
         {id: 1, icon: <MdVisibility/>, title: 'SEO Optimization', description: 'Be found first. We help your business climb search rankings so your ideal customers find you without the guesswork.'},
-        {id: 2, icon: <FaPhotoVideo/>, title: 'Online Payments', description: 'Unlock a new source of revenue for your business.'},
+        {id: 2, icon: <BsCurrencyDollar/>, title: 'Online Payments', description: 'Unlock a new source of revenue for your business.'},
         {id: 3, icon: <FaPhotoVideo/>, title: 'Content Creation (Photography + Video)', description: 'Tell your story with visuals that stick. We shoot sharp, scroll-stopping content your audience won’t forget.'},
 
 

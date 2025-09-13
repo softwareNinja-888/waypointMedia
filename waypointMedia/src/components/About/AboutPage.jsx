@@ -2,9 +2,8 @@ import { Btn } from "../helper/Btn";
 import { GoDotFill } from "react-icons/go";
 import { useContent } from "@/context/ContentContext";
 
-import { FaHandshake } from "react-icons/fa"
 import { AiFillCustomerService } from "react-icons/ai"
-import { FaTrophy } from "react-icons/fa"
+import { FaTrophy,FaSearch, FaSearchDollar, FaPalette, FaCode, FaHandsHelping, FaHandshake } from "react-icons/fa";
 
 import { useState, useEffect, useRef} from 'react';
 
@@ -53,7 +52,7 @@ function Card({name,nameColor='text-blue-950',icon=<FaHandshake size={30}/>,icon
 				{icon}
 			</div>
 			<div className={`text-2xl font-Cal_Sans ${nameColor}`}>{name}</div>
-			<div className={`text-lg font-Roboto`}>{description}</div>
+			<div className={`text-md font-Roboto`}>{description}</div>
 		</div>
 	)
 }
@@ -127,11 +126,14 @@ export function AboutPage(){
 					<div className="flex-1/2">
 						<div className="text-5xl font-Cal_Sans mb-5">Our Story</div>
 						<div className="flex flex-col gap-4 mb-5">
+
+
+
 							<p className="font-Roboto text-md">
-								Founded in 2025 by Bayanda Dlamin, {content.name} began as a small agency practice with a vision to create architecture that harmoniously blends form, function, and sustainability. From our humble beginnings in a small office with just three team members, we have grown into a globally recognized firm with a diverse portfolio of award-winning projects.
+								Founded in 2025, BluePeak Media was established with a clear mission: to craft premium, highly customizable websites that empower businesses to thrive in this digital age. As a new company, we are driven by the vision to combine cutting edge technology and strategic design into solutions that go beyond aesthetics and deliver measurable results.
 							</p>
 							<p className="font-Roboto text-md">
-								Throughout our journey, we have remained committed to our founding principles: pushing the boundaries of design, prioritizing sustainability, and creating spaces that positively impact the lives of those who use them.
+								From day one, our commitment has been to create websites that don’t just exist, but high performing websites that reflect the unique identity of each client and ultimately fuel growth. We believe every business deserves a digital presence that inspires trust, communicates value, and positions them for long term success.
 							</p>
 						</div>
 						<Btn text="Get in Touch" bg="bg-mainGreen hover:bg-mainGreen/90" textColor="text-black hover:scale-103" border="border-none"/>
@@ -160,36 +162,71 @@ export function AboutPage(){
 					</div>
 					{/* ICON DESCRIPTIONS */}
 					<div className="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 lg:gap-20 mt-10">
-						<Card name='Integrity' icon={<FaHandshake size={30}/>}/>
-						<Card name='Customer-Centered' icon={<AiFillCustomerService size={30}/>}/>
-						<Card name='Excellence' icon={<FaTrophy size={30}/>}/>
+						<Card 
+						  name='Integrity' 
+						  icon={<FaHandshake size={30}/>} 
+						  description="We uphold honesty and transparency in every project, building trust and long-lasting partnerships with our clients." 
+						/>
+
+						<Card 
+						  name='Customer Centered' 
+						  icon={<AiFillCustomerService size={30}/>} 
+						  description="Your goals are at the heart of everything we do, ensuring every solution is tailored to your unique business needs." 
+						/>
+
+						<Card 
+						  name='Excellence' 
+						  icon={<FaTrophy size={30}/>} 
+						  description="We are committed to delivering premium websites with the highest standards of quality, performance, and design." 
+						/>
 					</div>
 				</div>
 				<div className="w-10/12 mx-auto">
-					{/*<SectionIntro description="Meet our amazing team behind our excellence"/>
-					<div className="grid grid-cols-1 md:grid-cols-2 mt-10 gap-y-20 gap-x-10">
-						<EmployeeCard name='Ethan Carter' position="Social Media Marketer" img="/13.webp"/>
-						<EmployeeCard name='Bayanda Dlamini' position="Web Developer" img="/12.webp"/>
-						<EmployeeCard name='Bayanda Dlamini' position="Web Developer" img="/about/a5.avif"/>
-						<EmployeeCard name='Bayanda Dlamini' position="Web Developer" img="/about/a4.avif"/>
-					</div>*/}
 					<div className="grid grid-cols-2 gap-3 flex-1/2 font-Poppins mt-10" ref={statsRef}>
-
 						{/* IMCREMENTING STATS */}
-						<Stat targetNumber="24+" name="Years of Experinece" isVisible={statsVisible} />
-						<Stat targetNumber="200+" name="Competed Projects" isVisible={statsVisible} />
-						<Stat targetNumber="100%" name="Customer Satisfaction" isVisible={statsVisible} className='col-span-2'/>
+						<Stat targetNumber="100%" name="Responsive Design" isVisible={statsVisible} />
+	                    <Stat targetNumber="100%" name="Custom Websites" isVisible={statsVisible} />
+	                    <Stat targetNumber="100%" name="Customer Satisfaction" isVisible={statsVisible} className='col-span-2' />
 					</div>
 				</div>
 				<div className="w-10/12 mx-auto">
 					<SectionIntro Sectitle="Why We stand out" title="Why Choose Us" description="We believe in perfection with structure"/>
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-y-8 md:gap-y-16 gap-x-10">
-						<Card name='Niche expertise in hospitality'/>
-						<Card name='Content tailored for tourism' icon={<AiFillCustomerService size={30}/>}/>
-						<Card name='Proven Growth Strategies' icon={<FaTrophy size={30}/>}/>
-						<Card name='100% Satisfaction Guarantee' />
-						<Card name='Viral Content Creation' icon={<AiFillCustomerService size={30}/>}/>
-						<Card name='Niche expertise in hospitality' icon={<FaTrophy size={30}/>}/>
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-y-8 md:gap-y-16 gap-x-10">	
+						<Card 
+						  name='Strategic Discovery First' 
+						  icon={<FaSearch size={30}/>} 
+						  description="We begin every project with an in-depth strategy session to understand your business goals, target audience, and industry, ensuring your website is built on a strong foundation for success." 
+						/>
+
+						<Card 
+						  name='SEO-Driven Content' 
+						  icon={<FaSearchDollar size={30}/>} 
+						  description="We craft compelling copy infused with SEO best practices so your website doesn’t just look great, but also ranks well and attracts the right customers to your business." 
+						/>
+
+						<Card 
+						  name='Custom Premium Design' 
+						  icon={<FaPalette size={30}/>} 
+						  description="Every website is fully customized to reflect your unique brand identity, delivering a premium look and seamless user experience that sets you apart from competitors." 
+						/>
+
+						<Card 
+						  name='Cutting Edge Development' 
+						  icon={<FaCode size={30}/>} 
+						  description="We use modern technologies and best practices to deliver fast, secure, and responsive websites that perform flawlessly across all devices and platforms." 
+						/>
+
+						<Card 
+						  name='Ongoing Support & Growth' 
+						  icon={<FaHandsHelping size={30}/>} 
+						  description="We don’t stop at launch. Our team provides continuous support, maintenance, and performance improvements to keep your website growing with your business." 
+						/>
+
+						<Card 
+						  name='Trusted Premium Partner' 
+						  icon={<FaHandshake size={30}/>} 
+						  description="We value transparency, collaboration, and long-term relationships, working as your trusted partner in creating digital solutions that drive measurable business growth." 
+						/>
 					</div>
 				</div>
 			</div>
