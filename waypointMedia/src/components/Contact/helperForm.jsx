@@ -14,7 +14,7 @@ export const DefaultColumn = ({ children }) => {
         <div className='relative'>
           <input
             type='text'
-            placeholder='Devid Jhon'
+            placeholder='John Doe'
             id={`name${section}`}
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -54,7 +54,7 @@ export const DefaultColumn = ({ children }) => {
             id={`email${section}`}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder='info@yourmail.com'
+            placeholder='mail@youremail.com'
             className={` ${width} bg-transparent rounded-md border border-black py-[10px] pr-3 pl-12 text-dark-6 outline-none transition focus:border-mainGreen focus:border-2 active:border-mainGreen disabled:cursor-default disabled:bg-gray-2 font-Poppins text-black`}
           />
           <span className='absolute top-1/2 left-4 -translate-y-1/2'>

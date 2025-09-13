@@ -87,7 +87,7 @@ export function ContactPageForm() {
           </DefaultColumn> <DefaultColumn>
             <MessageTextarea message={message} setMessage={setMessage} section='Contact' color="text-black" borderColor='focus:border-greenPrimary active:border-greenPrimary resize-none'/>
           </DefaultColumn>
-          <button aria-label="Submit Form" id="submit_form" type="submit" className="bg-mainGreen border-none text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 font-Roboto h-11 w-full" disabled={isSubmitting}>
+          <button aria-label="Submit Form" id="submit_form" type="submit" className="bg-mainGreen border-none text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 font-Roboto h-11 w-full cursor-pointer" disabled={isSubmitting}>
             {isSubmitting ? (
                 <>
                     <svg

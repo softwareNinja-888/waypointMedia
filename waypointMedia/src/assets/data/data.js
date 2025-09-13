@@ -133,23 +133,14 @@ createProject.addProject({
     gitHub:'',
 })
 
-// createProject.addProject({
-//     project_name: 'Royal Villas',
-//     img: '/mockups/mockupTorch.avif',
-//     type: 'Showcase',
-//     description: 'This is a fictional hotel to showcase the type of landing page we can provide. We are however not limited to these type of products',
-//     link: 'https://salt-light-blog.vercel.app/',
-//     gitHub:'',
-// })
-
-// createProject.addProject({
-//     project_name: 'Royal Villas',
-//     img: '/mockups/mockupNOMA.avif',
-//     type: 'Showcase',
-//     description: 'This is a fictional hotel to showcase the type of landing page we can provide. We are however not limited to these type of products',
-//     link: 'https://salt-light-blog.vercel.app/',
-//     gitHub:'',
-// })
+createProject.addProject({
+    project_name: 'NOMA Skincare',
+    img: '/mockups/mockupNoma.png',
+    type: 'Showcase',
+    description: 'This is a fictional E-commerce skincare site to showcase the type of landing page we can provide. We are however not limited to these type of products',
+    link: 'https://noma-skincare.vercel.app/',
+    gitHub:'',
+})
 
 // ADING PRICING 
 createPricing.addPrice({

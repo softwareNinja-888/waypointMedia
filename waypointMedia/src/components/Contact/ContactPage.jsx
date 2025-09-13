@@ -7,6 +7,8 @@ import { FaPhone } from "react-icons/fa6"
 import { IoMdMail } from "react-icons/io" 
 import { SlCalender } from "react-icons/sl" 
 
+import { Btn } from '../helper/Btn'
+
 
 
 export function Quote({Quote}){
@@ -38,9 +40,9 @@ function ReviewCard(){
 
     return (
         <>
-            <div className="flex flex-col gap-8 border-2 border-secondaryGreen bg-white w-110 h-58 px-3 py-5 rounded-2xl -rotate-3">
+            <div className="flex flex-col gap-8 border-4 border-mainGreen bg-white w-110 h-68 px-3 py-5  -rotate-3 mt-10">
                 <StarRating rating={5}/>
-                <div className="">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, vel quo aperiam in fugiat at et rem ."</div>
+                <div className="">"BluePeak Media did a great job on our website. It looks professional and has already helped us reach more cients. Really happy with the outcome!"</div>
                 <div className="flex gap-2">
                     <img src="/9.webp" alt="" className="w-13 h-13 rounded-full" />
                     <div className="flex flex-col text-sm justify-center ">
@@ -64,9 +66,7 @@ function ContactCards({name='+268 7845 1276',icon=<FaPhone/>,actionText='Call No
 					</div>
 					<div className="text-md font-Cal_Sans">{name}</div>
 				</div>
-				<div className="">
-					{actionText}
-				</div>
+				 <Btn text={actionText} bg="bg-mainGreen border-none" textColor="text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Roboto" width='w-30 h-10 md:h-10 md:w-40'/>
 			</div>
 		</>
 	)
@@ -85,11 +85,10 @@ export function ContactPage(){
 				<div className="flex flex-col gap-10 mt-30">
 					<div className="">
 						<div className="text-3xl font-Cal_Sans uppercase">Get in touch with us</div>
-						<div className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officia.</div>
+						<div className="">Have a question or an idea? Let’s connect and make it happen.</div>
 						<div className="flex flex-col gap-4 mt-3">
-							<ContactCards />
-							<ContactCards name="infoemail@gmail.com" icon={<IoMdMail/>} actionText="Send A Message"/>
-							<ContactCards name="infoemail@gmail.com" icon={<SlCalender/>} actionText="Book Consultation"/>
+							<ContactCards  name="+268 78381430" actionText="Call Now"/>
+							<ContactCards name="serviceinfo@bluepeak.com" icon={<IoMdMail/>} actionText="Send An Email"/>
 						</div>
 					</div>
 					<ReviewCard/>

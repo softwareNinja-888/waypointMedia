@@ -1,3 +1,4 @@
+import { Link } from '@tanstack/react-router'
 import { Btn } from "../helper/Btn";
 import { GoDotFill } from "react-icons/go";
 import { useContent } from "@/context/ContentContext";
@@ -136,7 +137,9 @@ export function AboutPage(){
 								From day one, our commitment has been to create websites that don’t just exist, but high performing websites that reflect the unique identity of each client and ultimately fuel growth. We believe every business deserves a digital presence that inspires trust, communicates value, and positions them for long term success.
 							</p>
 						</div>
-						<Btn text="Get in Touch" bg="bg-mainGreen hover:bg-mainGreen/90" textColor="text-black hover:scale-103" border="border-none"/>
+						<Link to='/contact' className="">
+    						<Btn text="Get in Touch" bg="bg-mainGreen hover:bg-mainGreen/90" textColor="text-black hover:scale-103" border="border-none"/>
+                        </Link>
 					</div>
 					<div className="flex-1/2">
 						<img src="/32.webp" alt="office image" className="h-full w-full rounded-3xl " />
@@ -150,13 +153,13 @@ export function AboutPage(){
 							<img src="/about/a1.avif" alt="office image" className="h-full rounded-2xl" />
 						</div>
 						<div className="">
-							<img src="/about/a.avif" alt="office image" className="h-70 w-full rounded-2xl" />
+							<img src="/about/a2.avif" alt="office image" className="h-full rounded-2xl" />
 						</div>
 						<div className="row-span-2">
 							<img src="/about/a3.avif" alt="office image" className="h-full rounded-2xl" />
 						</div>
 						<div className="">
-							<img src="/about/a2.avif" alt="office image" className="h-full rounded-2xl" />
+							<img src="5.webp" alt="office image" className="h-70 w-full rounded-2xl" />
 						</div>
 						
 					</div>
