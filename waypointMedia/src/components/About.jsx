@@ -66,7 +66,7 @@ export function About({content}) {
     return (
         <>
             <div className="flex flex-col md:flex-row md:px-10 lg:px-20 py-20 gap-20">
-                <div className="text-center text-2xl lg:text-3xl font-Cal_Sans flex-1/2 self-center">{content.name} is a dynamic web development agency based in the heart of Eswatini, dedicated to crafting modern, responsive, and fully customized websites that empower businesses to grow online.</div>
+                <div className="text-center text-2xl lg:text-3xl font-Cal_Sans flex-1/2 self-center">{content.name} is a dynamic web development agency, dedicated to crafting modern, responsive, and fully customized websites that empower businesses to grow online.</div>
                 <div className="grid grid-cols-2 gap-3 flex-1/2 font-Poppins" ref={statsRef}>
 
                     {/* IMCREMENTING STATS */}

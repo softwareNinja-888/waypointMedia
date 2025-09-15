@@ -57,8 +57,8 @@ export function Services({content}) {
     const ServiceSections = [
          {id: 0, icon: <FaCode/>, title: 'Website Development', description: 'We build fast, responsive websites that turn visitors into customers and reflect your brand at every click.'},
         {id: 1, icon: <MdVisibility/>, title: 'SEO Optimization', description: 'Be found first. We help your business climb search rankings so your ideal customers find you without the guesswork.'},
-        {id: 2, icon: <BsCurrencyDollar/>, title: 'Online Payments', description: 'Unlock a new source of revenue for your business.'},
-        {id: 3, icon: <FaPhotoVideo/>, title: 'Content Creation (Photography + Video)', description: 'Tell your story with visuals that stick. We shoot sharp, scroll-stopping content your audience won’t forget.'},
+        {id: 2, icon: <BsCurrencyDollar/>, title: 'Online Payments', description: 'Get paid faster and easier. We set up secure, seamless payment solutions that keep your business moving.'},
+        {id: 3, icon: <FaPhotoVideo/>, title: 'Content Creation', description: 'Tell your story with visuals that stick. We shoot sharp, scroll-stopping content your audience won’t forget.'},
 
 
 

@@ -81,7 +81,7 @@ export function Hero({content}) {
 
                     {/* Subtext */}
                     
-                   Reimagine your digital presence with {content.name}, a forward-thinking agency blending technology, strategy, and storytelling to elevate your brand and drive results.
+                   Reimagine your digital presence with {content.name}, a forward thinking web agency blending technology, strategy, and storytelling to elevate your brand and drive results.
                 </motion.div>
 
                 <div className="flex flex-row justify-center gap-3">

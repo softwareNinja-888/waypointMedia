@@ -67,7 +67,7 @@ export function PortfolioPage() {
           whileTap={{ scale: 0.98 }}
           className="py-10"
         >
-          <Link to="/portfolio" className="mx-auto block w-fit">
+          <Link to="/contact" className="mx-auto block w-fit">
             <Btn
               text="Get Started"
               bg="bg-mainGreen border-none"
@@ -79,7 +79,7 @@ export function PortfolioPage() {
         </motion.div>
       </div>
 
-      <div className="grid grid-cols-2 w-11/12 mx-auto gap-x-10 gap-y-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 w-12/12 md:w-8/12 lg:w-11/12 mx-auto gap-x-10 gap-y-10">
         {Projects.map((project, index) => (
           <PortfolioCard id={project.id} key={index} />
         ))}

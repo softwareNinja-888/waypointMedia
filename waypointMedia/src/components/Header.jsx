@@ -37,7 +37,7 @@ export function Header({content}){
 
             {/* CTA */}
             <Link to='/contact' className=" ">
-                <Btn text="Schedule Call" bg="bg-mainGreen border-none" textColor="hidden md:flex text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Roboto" width='h-11 w-36'/>
+                <Btn text="Schedule Meeting" bg="bg-mainGreen border-none" textColor="hidden md:flex text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Roboto" width='h-11 w-36'/>
             </Link>
            
 

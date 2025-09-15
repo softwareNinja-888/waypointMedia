@@ -100,7 +100,7 @@ export function Footer({content}){
                             <Link to='/' className=''>
                                 <img src={content.logoImg} alt="logo" className="w-16 h-16" />
                             </Link>
-                            <p className="text-base leading-relaxed text-black mt-7 font-Poppins">Socials made simple, strategy made smart. We help businesses create scroll-stopping content that builds brand love, trust, and conversions—start today.</p>
+                            <p className="text-base leading-relaxed text-black mt-7 font-Poppins">Websites made premium, strategy made clear. We build modern, responsive sites that grow your business, build trust, and drive results. Start today!</p>
 
                             <ul className="flex items-center space-x-3 mt-9">
                                 <SocialIcons path={pathX} socialLink=''/>
