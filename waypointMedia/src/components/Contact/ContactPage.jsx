@@ -40,7 +40,7 @@ function ReviewCard(){
 
     return (
         <>
-            <div className="flex flex-col gap-8 border-4 border-mainGreen bg-white w-110 h-68 px-3 py-5  -rotate-3 mt-10">
+            <div className="hidden lg:flex flex-col gap-8 border-4 border-mainGreen bg-white w-110 h-68 px-3 py-5  -rotate-3 mt-10">
                 <StarRating rating={5}/>
                 <div className="">"BluePeak Media did a great job on our website. It looks professional and has already helped us reach more cients. Really happy with the outcome!"</div>
                 <div className="flex gap-2">
@@ -64,7 +64,7 @@ function ContactCards({name='+268 7845 1276',icon=<FaPhone/>,actionText='Call No
 					<div className="">
 						{icon}
 					</div>
-					<div className="text-md font-Cal_Sans">{name}</div>
+					<div className="text-sm lg:text-md font-Cal_Sans">{name}</div>
 				</div>
 				 <Btn text={actionText} bg="bg-mainGreen border-none" textColor="text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Roboto" width='w-30 h-10 md:h-10 md:w-40'/>
 			</div>
@@ -79,16 +79,16 @@ export function ContactPage(){
 	
 	return (
 		<>
-			<div className="flex h-fit px-20 bg-center bg-cover bg-no-repeat py-0" style={{backgroundImage:"url('/bg/shape2.avif')"}}>
+			<div className="flex flex-col lg:flex-row h-fit px-0 md:px-20 bg-center bg-cover bg-no-repeat py-0" style={{backgroundImage:"url('/bg/shape2.avif')"}}>
 
 				{/* LEFT SIDE */}
-				<div className="flex flex-col gap-10 mt-30">
+				<div className="flex flex-col gap-10 mt-30 w-11/12 lg:w-6/12 mx-auto">
 					<div className="">
 						<div className="text-3xl font-Cal_Sans uppercase">Get in touch with us</div>
 						<div className="">Have a question or an idea? Let’s connect and make it happen.</div>
 						<div className="flex flex-col gap-4 mt-3">
 							<ContactCards  name="+268 78381430" actionText="Call Now"/>
-							<ContactCards name="serviceinfo@bluepeak.com" icon={<IoMdMail/>} actionText="Send An Email"/>
+							<ContactCards name="serviceinfo@bluepeak.com" icon={<IoMdMail/>} actionText="Email"/>
 						</div>
 					</div>
 					<ReviewCard/>
