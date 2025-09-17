@@ -29,7 +29,7 @@ function LinkFooter({name='About',href='/about'}){
 function FormFooter(){
     return (
         <>
-             <form action="" method="" className="flex flex-col gap-4 mt-6">
+            <form action="https://formbold.com/s/oJ4a4" method="POST" enctype="multipart/form-data" className="flex flex-col gap-4 mt-6">
                 <div>
                     <label for="name" className="sr-only">Name</label>
                     <input type="text" name="name" id="name" placeholder="Enter your name" className="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600" />
@@ -44,7 +44,7 @@ function FormFooter(){
                     <textarea name="message" id="message" placeholder='Your Message' className='block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600 resize-none h-44'></textarea>
                 </div>
 
-                <button type="button" className="inline-flex items-center justify-center px-6 py-4 mt-3 font-inter700 text-white transition-all duration-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:bg-blue-700 cursor-pointer hover:scale-102" onClick={()=>{setIsVisible(true)}}>Send</button>
+                <button type="submit" className="inline-flex items-center justify-center px-6 py-4 mt-3 font-inter700 text-white transition-all duration-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:bg-blue-700 cursor-pointer hover:scale-102" onClick={()=>{setIsVisible(true)}}>Send</button>
             </form>
         </>
         )

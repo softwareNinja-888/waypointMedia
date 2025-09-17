@@ -67,7 +67,8 @@ export function ContactPageForm() {
       };
 
   return (
-    <div className="bg-white text-black p-8 rounded-xl shadow-lg max-w-md mx-auto  overflow-hidden">
+    // HIDDEN FOR NOW TIL I APPLY FUNCTIONALITY
+    <div className="hidden bg-white text-black p-8 rounded-xl shadow-lg max-w-md mx-auto  overflow-hidden">
      
       
       <div className="">
