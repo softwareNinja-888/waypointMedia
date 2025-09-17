@@ -47,7 +47,7 @@ export function Hero({content}) {
     return (
         <>
             <motion.div 
-                className="relative bg-white/30 backdrop-blur-lg p-6 w-11/12 md:w-8/12 lg:w-6/12 mx-auto rounded-4xl my-8 lg:my-20 flex flex-col gap-5"
+                className="relative bg-white/30 backdrop-blur-lg p-6 w-11/12 md:w-8/12 lg:w-6/12 mx-auto rounded-4xl my-8 lg:my-20 flex flex-col gap-5 "
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"

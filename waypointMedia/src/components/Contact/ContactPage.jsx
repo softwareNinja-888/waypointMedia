@@ -10,7 +10,6 @@ import { SlCalender } from "react-icons/sl"
 import { Btn } from '../helper/Btn'
 
 
-
 export function Quote({Quote}){
 
     return (
@@ -56,7 +55,7 @@ function ReviewCard(){
     )
 }
 
-function ContactCards({name='+268 7845 1276',icon=<FaPhone/>,actionText='Call Now'}){
+function ContactCards({name='+268 7845 1276',icon=<FaPhone/>,actionText='Call Now',type='call'}){
 	return(
 		<>
 			<div className="bg-white flex flex-row justify-between px-3 py-5 rounded-2xl">
@@ -66,7 +65,16 @@ function ContactCards({name='+268 7845 1276',icon=<FaPhone/>,actionText='Call No
 					</div>
 					<div className="text-sm lg:text-md font-Cal_Sans">{name}</div>
 				</div>
-				 <Btn text={actionText} bg="bg-mainGreen border-none" textColor="text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Roboto" width='w-30 h-10 md:h-10 md:w-40'/>
+				{type === 'call' ? (
+					<a href="tel:+26878381430">
+						<Btn text={actionText} bg="bg-mainGreen border-none" textColor="text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Roboto" width='w-30 h-10 md:h-10 md:w-40'/>		
+					</a>
+					) : (
+					<a href="mailto:mlandvodlamini03@gmail.com?subject=Inquiry%20about%20Services&body=Hello,%0D%0AI%20would%20like%20to%20know%20more%20about%20your%20service.">
+						<Btn text={actionText} bg="bg-mainGreen border-none" textColor="text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Roboto" width='w-30 h-10 md:h-10 md:w-40'/>
+					</a>
+					)
+				}
 			</div>
 		</>
 	)
@@ -88,13 +96,13 @@ export function ContactPage(){
 						<div className="">Have a question or an idea? Let’s connect and make it happen.</div>
 						<div className="flex flex-col gap-4 mt-3">
 							<ContactCards  name="+268 78381430" actionText="Call Now"/>
-							<ContactCards name="serviceinfo@bluepeak.com" icon={<IoMdMail/>} actionText="Email"/>
+							<ContactCards name="serviceinfo@bluepeak.com" icon={<IoMdMail/>} actionText="Email" type="Email"/>
 						</div>
 					</div>
 					<ReviewCard/>
 				</div>
 				{/* RIGHT SIDE */}
-				<div className=" flex-1 bg-whiteBg py-10">
+				<div className="hidden md:block flex-1 bg-whiteBg py-10">
 					<ContactPageForm/>
 				</div>
 
