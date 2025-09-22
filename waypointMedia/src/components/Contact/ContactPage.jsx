@@ -45,8 +45,8 @@ function ReviewCard(){
                 <div className="flex gap-2">
                     <img src="/9.webp" alt="" className="w-13 h-13 rounded-full" />
                     <div className="flex flex-col text-sm justify-center ">
-                        <div className="">John Doe</div>
-                        <div className="">Co-Founder, Apple</div>
+                        <div className="font-Cal_Sans">John Doe</div>
+                        <div className="font-Roboto">Small business owner</div>
                     </div>
                 </div>
 
@@ -70,7 +70,7 @@ function ContactCards({name='+268 7845 1276',icon=<FaPhone/>,actionText='Call No
 						<Btn text={actionText} bg="bg-mainGreen border-none" textColor="text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Roboto" width='w-30 h-10 md:h-10 md:w-40'/>		
 					</a>
 					) : (
-					<a href="mailto:mlandvodlamini03@gmail.com?subject=Inquiry%20about%20Services&body=Hello,%0D%0AI%20would%20like%20to%20know%20more%20about%20your%20service.">
+					<a href="mailto:webdev.bybayanda@gmail.com?subject=Inquiry%20about%20Services&body=Hello,%0D%0AI%20would%20like%20to%20know%20more%20about%20your%20service.">
 						<Btn text={actionText} bg="bg-mainGreen border-none" textColor="text-black text-sm trasition-all duration-500 hover:rounded-xl hover:scale-103 " font="font-Roboto" width='w-30 h-10 md:h-10 md:w-40'/>
 					</a>
 					)
