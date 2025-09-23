@@ -15,10 +15,11 @@ export function StickyBar({promo='Start Growing with WayPoint Today!'}) {
             {promo} <Link to="/contact" className='ml-1 underline'>Get started</Link>
           </div>
         </div>
-        <button className="absolute right-0 top-1/2 flex h-6 w-6 -translate-y-1/2 items-center justify-center text-black/50 duration-200 hover:text-black cursor-pointer" onClick={()=>{
+        <button aria-label="Close" className="absolute right-0 top-1/2 flex h-6 w-6 -translate-y-1/2 items-center justify-center text-black/50 duration-200 hover:text-black cursor-pointer" onClick={()=>{
           setOpen(false)
         }}>
           <svg
+            aria-hidden="true"
             width="16"
             height="16"
             viewBox="0 0 16 16"

@@ -31,6 +31,7 @@ function PortfolioCard({ id }) {
       <div>
         <img
           src={project.img}
+          loading="lazy"
           alt={`${project.project_name} mockup`}
           className="cursor-pointer h-70 w-full object-cover rounded-lg"
         />

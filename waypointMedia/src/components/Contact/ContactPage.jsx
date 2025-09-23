@@ -41,7 +41,7 @@ function ReviewCard(){
         <>
             <div className="hidden lg:flex flex-col gap-8 border-4 border-mainGreen bg-white w-110 h-68 px-3 py-5  -rotate-3 mt-10">
                 <StarRating rating={5}/>
-                <div className="">"BluePeak Media did a great job on our website. It looks professional and has already helped us reach more cients. Really happy with the outcome!"</div>
+                <div className="font-Playfair">"BluePeak Media did a great job on our website. It looks professional and has already helped us reach more cients. Really happy with the outcome!"</div>
                 <div className="flex gap-2">
                     <img src="/9.webp" alt="" className="w-13 h-13 rounded-full" />
                     <div className="flex flex-col text-sm justify-center ">
@@ -83,7 +83,7 @@ function ContactCards({name='+268 7845 1276',icon=<FaPhone/>,actionText='Call No
 export function ContactPage(){
 
 	const content = useContent()
-	const quote = {author:'Seth Godin',text:'Marketing is no longer about the stuff you make, buut about the stories you tell.'}
+	const quote = {author:'Seth Godin',text:'Marketing is no longer about the stuff you make, but about the stories you tell.'}
 	
 	return (
 		<>
@@ -93,10 +93,10 @@ export function ContactPage(){
 				<div className="flex flex-col gap-10 mt-30 w-11/12 lg:w-6/12 mx-auto">
 					<div className="">
 						<div className="text-3xl font-Cal_Sans uppercase">Get in touch with us</div>
-						<div className="">Have a question or an idea? Let’s connect and make it happen.</div>
+						<div className="font-Playfair">Have a question or an idea? Let’s connect and make it happen.</div>
 						<div className="flex flex-col gap-4 mt-3">
-							<ContactCards  name="+268 78381430" actionText="Call Now"/>
-							<ContactCards name="serviceinfo@bluepeak.com" icon={<IoMdMail/>} actionText="Email" type="Email"/>
+							<ContactCards  name="+268 7838 1430" actionText="Call Now"/>
+							<ContactCards name="webdev.bybayanda@gmail.com" icon={<IoMdMail/>} actionText="Email" type="Email"/>
 						</div>
 					</div>
 					<ReviewCard/>

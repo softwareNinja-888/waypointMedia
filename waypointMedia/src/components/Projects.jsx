@@ -26,7 +26,7 @@ function ProjectCard({id=0,name='Project Title',img='/0.webp',type="Landing page
             <>
                 <Link to={project.link} target='_blank' className={`flex flex-col gap-5 ${gridRows} ${gridColomns} `}>
                         <div className="">
-                            <img src={project.img} alt={`${project.project_name} mockup`} className="cursor-pointer h-70 md:h-70 lg:h-100" />
+                            <img src={project.img} alt={`${project.project_name} mockup`} loading="lazy" className="cursor-pointer h-70 md:h-70 lg:h-100" />
                         </div>
                         <div className="flex flex-col gap-2 px-2 text-black">
                             <div className="font-Cal_Sans text-2xl text-black">{project.project_name}</div>
