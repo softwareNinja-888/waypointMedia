@@ -11,7 +11,7 @@ export function StickyBar({promo='Start Growing with WayPoint Today!'}) {
     <section className={`bg-mainGreen px-6 py-1 ${open ? 'block' : 'hidden'}`}>
       <div className="relative pr-6">
         <div className="flex flex-wrap items-center justify-center gap-5 text-center">
-          <div className="inline-flex text-xs md:text-sm font-playfairBold  text-black  uppercase font-Roboto">
+          <div className="inline-flex text-xs md:text-sm text-black  uppercase font-Roboto">
             {promo} <Link to="/contact" className='ml-1 underline'>Get started</Link>
           </div>
         </div>
