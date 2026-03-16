@@ -27,8 +27,8 @@ export function Home() {
     <>
       <div className="bg-center bg-cover bg-no-repeat py-30" style={{backgroundImage:"url('/bg/shape2.avif')"}}>
         <Services content={content}/>
-        <How/>
         <Projects/>
+        <How/>
         <About content={content}/>
         <WhyUs content={content}/>
         <GrowthChart/>

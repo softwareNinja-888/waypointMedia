@@ -5,7 +5,7 @@ import { Waves } from './helper/Waves';
 
 
 // ICONS
-import { FaCode,FaPhotoVideo } from "react-icons/fa";
+import { FaCode,FaPhotoVideo,FaRobot } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
 import { FaChartLine } from "react-icons/fa6";
 import { MdVisibility } from "react-icons/md";
@@ -56,12 +56,10 @@ export function Services({content}) {
 
     const ServiceSections = [
          {id: 0, icon: <FaCode/>, title: 'Website Development', description: 'We build fast, responsive websites that turn visitors into customers and reflect your brand at every click.'},
-        {id: 1, icon: <MdVisibility/>, title: 'SEO Optimization', description: 'Be found first. We help your business climb search rankings so your ideal customers find you without the guesswork.'},
+         // AI CHAT BOT:
+        {id: 1,icon: <FaRobot />, title: 'AI Chat Assistant', description: 'Automate customer conversations with an intelligent AI chat assistant that answers questions, captures leads, and supports visitors 24/7 on your website.'},
         {id: 2, icon: <BsCurrencyDollar/>, title: 'Online Payments', description: 'Get paid faster and easier. We set up secure, seamless payment solutions that keep your business moving.'},
-        {id: 3, icon: <FaPhotoVideo/>, title: 'Content Creation', description: 'Tell your story with visuals that stick. We shoot sharp, scroll-stopping content your audience won’t forget.'},
-
-
-
+        {id: 3, icon: <MdVisibility/>, title: 'SEO Optimization', description: 'Be found first. We help your business climb search rankings so your ideal customers find you without the guesswork.'},
     ];
 
     return (
@@ -91,7 +89,7 @@ export function Services({content}) {
                         <motion.img
                           key="image1"
                           alt="picture"
-                          src="/illus/search.svg"
+                          src="/illus/AI1.svg"
                           className="rounded-4xl object-contain object-center w-full h-[660px]"
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
@@ -115,7 +113,7 @@ export function Services({content}) {
                         <motion.img
                           key="image2"
                           alt="picture"
-                          src="/illus/photo2.svg"
+                          src="/illus/search.svg"
                           className="rounded-4xl object-contain w-full h-[660px]"
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
